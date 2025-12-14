@@ -1,0 +1,171 @@
+:root{
+  --bg:#0b1020;
+  --card:#111a33;
+  --muted:#9fb0d0;
+  --text:#e8eefc;
+  --accent:#6ea8fe;
+  --good:#31d0aa;
+  --bad:#ff6b6b;
+  --border:rgba(255,255,255,.10);
+  --shadow: 0 12px 30px rgba(0,0,0,.35);
+  --radius:16px;
+  --radius2:22px;
+  --font: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font);
+  background: radial-gradient(1200px 600px at 30% -10%, #1a2b66 0%, transparent 60%),
+              radial-gradient(1200px 600px at 90% 10%, #2a1a66 0%, transparent 55%),
+              var(--bg);
+  color:var(--text);
+}
+
+.wrap{max-width:1100px;margin:0 auto;padding:20px}
+
+.topbar{
+  position:sticky;top:0;z-index:10;
+  background: linear-gradient(180deg, rgba(11,16,32,.92), rgba(11,16,32,.65));
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid var(--border);
+}
+
+h1{margin:0;font-size:22px;letter-spacing:.2px}
+.subtitle{margin:6px 0 14px;color:var(--muted);font-size:13px}
+
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px}
+
+.btn{
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:10px 14px;
+  background:transparent;
+  color:var(--text);
+  cursor:pointer;
+  transition:.15s transform, .15s opacity, .15s background;
+}
+.btn:hover{transform: translateY(-1px)}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.btn-primary{
+  background:linear-gradient(180deg, rgba(110,168,254,.9), rgba(110,168,254,.65));
+  color:#071024;
+  border-color: rgba(110,168,254,.35);
+  font-weight:700;
+}
+.btn-secondary{
+  background: rgba(255,255,255,.04);
+}
+
+.status{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px;
+  margin-bottom:12px;
+}
+.pill{
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background: rgba(255,255,255,.03);
+  color: var(--muted);
+  font-size:13px;
+}
+.toggle{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:13px}
+.toggle input{transform:scale(1.15)}
+
+.toolbar{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+  margin: 18px 0;
+}
+.toolbar input, .toolbar select{
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 12px;
+  outline:none;
+}
+.toolbar input{flex: 1; min-width: 260px}
+.toolbar select{min-width: 180px}
+
+.result{
+  margin: 10px 0 0;
+  padding: 14px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  box-shadow: var(--shadow);
+}
+.result.hidden{display:none}
+.result strong{color: var(--text)}
+.result .good{color: var(--good);font-weight:800}
+.result .bad{color: var(--bad);font-weight:800}
+
+.card{
+  border:1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  border-radius: var(--radius2);
+  padding: 14px;
+  box-shadow: var(--shadow);
+  margin: 12px 0;
+}
+.cardHeader{
+  display:flex;justify-content:space-between;gap:12px;align-items:flex-start;
+}
+.meta{
+  display:flex;gap:8px;flex-wrap:wrap;
+}
+.tag{
+  font-size:12px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.03);
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+.qtitle{
+  margin: 8px 0 10px;
+  font-size: 15px;
+  line-height: 1.45;
+}
+.options{display:grid;gap:8px;margin:10px 0}
+.option{
+  border:1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,.03);
+  cursor:pointer;
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+}
+.option input{margin-top:3px}
+.option:hover{background: rgba(255,255,255,.05)}
+
+.card details{
+  margin-top:10px;
+  border-top: 1px dashed rgba(255,255,255,.15);
+  padding-top:10px;
+}
+.card summary{
+  cursor:pointer;
+  color: var(--muted);
+}
+.feedback{
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.18);
+}
+.feedback.good{border-color: rgba(49,208,170,.35)}
+.feedback.bad{border-color: rgba(255,107,107,.35)}
+
+.footer{color:var(--muted);font-size:12px;margin:30px 0 10px;text-align:center}
