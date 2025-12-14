@@ -2,134 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Virtualization Quiz</title>
-
-  <!-- Main Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <div class="page">
-
-    <!-- ================= SETUP SCREEN ================= -->
-    <section id="setupScreen" class="setup">
+  <!-- ===== SETUP (Only screen visible on load) ===== -->
+  <section id="setupScreen" class="screen setupScreen">
+    <div class="setupShell">
       <div class="setupCard">
-
         <div class="setupHeader">
-          <h1 class="setupTitle">Virtualization Quiz</h1>
-          <p class="setupSub">
-            Questions are loaded dynamically from <code>questions.xml</code>
-          </p>
+          <div>
+            <h1 class="setupTitle">Virtualization Quiz</h1>
+            <p class="setupSub">Questions are loaded from <code>questions.xml</code></p>
+          </div>
+          <span class="badge">GitHub Pages</span>
         </div>
 
         <div class="setupBody">
+          <div class="grid2">
+            <div class="field">
+              <label for="countInput">Number of questions</label>
+              <input id="countInput" type="number" min="1" value="20" />
+              <small id="countHint">Loading XML...</small>
+            </div>
 
-          <div class="formRow">
-            <label for="countInput">Number of questions</label>
-            <input id="countInput" type="number" min="1" value="20" />
-            <small id="countHint">Waiting for XML file...</small>
+            <div class="field">
+              <label for="timeInput">Time limit (minutes)</label>
+              <input id="timeInput" type="number" min="0" value="60" />
+              <small>0 = No timer</small>
+            </div>
           </div>
 
-          <div class="formRow">
-            <label for="timeInput">Time limit (minutes)</label>
-            <input id="timeInput" type="number" min="0" value="60" />
-            <small>Set to 0 for unlimited time</small>
-          </div>
+          <div class="toggles">
+            <label class="toggle">
+              <input id="shuffleToggle" type="checkbox" checked />
+              <span>Shuffle questions</span>
+            </label>
 
-          <div class="formRow checkboxRow">
-            <input id="shuffleToggle" type="checkbox" checked />
-            <label for="shuffleToggle">Shuffle questions</label>
-          </div>
-
-          <div class="formRow checkboxRow">
-            <input id="teacherToggle" type="checkbox" />
-            <label for="teacherToggle">
-              Teacher mode (show correct answer & explanation)
+            <label class="toggle">
+              <input id="teacherToggle" type="checkbox" />
+              <span>Teacher mode (show correct answer & explanation)</span>
             </label>
           </div>
 
           <div class="setupActions">
-            <button id="btnLoad" class="btn ghost" type="button">
-              Reload XML
-            </button>
-            <button id="btnStart" class="btn primary" type="button">
-              Start Quiz
-            </button>
+            <button id="btnLoad" class="btn ghost" type="button">Reload XML</button>
+            <button id="btnStart" class="btn primary" type="button">Start Quiz</button>
           </div>
 
           <div id="setupMsg" class="setupMsg" aria-live="polite"></div>
         </div>
 
         <div class="setupFooter">
-          <span class="pill">XML-based</span>
+          <span class="pill">One question per screen</span>
           <span class="pill">Auto grading</span>
-          <span class="pill">GitHub Pages ready</span>
+          <span class="pill">Timer option</span>
         </div>
-
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ================= QUIZ SCREEN ================= -->
-    <section id="quizScreen" class="quiz hidden">
+  <!-- ===== QUIZ (Hidden until Start) ===== -->
+  <section id="quizScreen" class="screen quizScreen hidden">
 
-      <header class="hero">
-        <h1 class="hero-title">PowerPoint Quiz Template</h1>
+    <header class="pptHero">
+      <h1 class="pptTitle">PowerPoint Quiz Template</h1>
 
-        <div class="ribbon">
-          <div class="ribbon-cap left"></div>
-          <div class="ribbon-body">
-            <div class="qtext" id="questionText">
-              Loading question...
-            </div>
-          </div>
-          <div class="ribbon-cap right"></div>
+      <div class="pptRibbon">
+        <div class="cap left"></div>
+        <div class="body">
+          <div class="qtext" id="questionText">Loading question...</div>
         </div>
-      </header>
+        <div class="cap right"></div>
+      </div>
+    </header>
 
-      <main class="main">
-
-        <div class="topRow">
-          <div class="progress">
+    <main class="pptMain">
+      <div class="statusRow">
+        <div class="progressWrap">
+          <div class="progressTop">
             <span id="progressText">Question 0 / 0</span>
-            <div class="progressBar">
-              <div class="progressFill" id="progressFill"></div>
-            </div>
           </div>
-
-          <div class="rightStats">
-            <div class="score" id="scoreText">Score: 0</div>
-            <div class="timer" id="timerText">Time: --:--</div>
+          <div class="progressBar">
+            <div class="progressFill" id="progressFill"></div>
           </div>
         </div>
 
-        <!-- OPTIONS (generated from XML) -->
-        <section class="grid" id="optionsGrid"></section>
+        <div class="stats">
+          <div class="statLine"><span>Score:</span> <b id="scoreText">0</b></div>
+          <div class="statLine"><span>Time:</span> <b id="timerText">--:--</b></div>
+        </div>
+      </div>
 
-        <section class="controls">
-          <div class="feedback" id="feedbackBox"></div>
+      <section class="choicesGrid" id="optionsGrid"></section>
 
-          <div class="btnRow">
-            <button class="btn ghost" id="btnPrev" type="button">Previous</button>
-            <button class="btn primary" id="btnSubmit" type="button" disabled>
-              Submit
-            </button>
-            <button class="btn primary" id="btnNext" type="button" disabled>
-              Next
-            </button>
-            <button class="btn ghost" id="btnRestart" type="button">
-              Restart
-            </button>
-          </div>
-        </section>
+      <section class="bottom">
+        <div class="feedback" id="feedbackBox" aria-live="polite"></div>
 
-      </main>
-    </section>
+        <div class="btnRow">
+          <button class="btn ghost" id="btnPrev" type="button">Previous</button>
+          <button class="btn primary" id="btnSubmit" type="button" disabled>Submit</button>
+          <button class="btn primary" id="btnNext" type="button" disabled>Next</button>
+          <button class="btn ghost" id="btnRestart" type="button">Restart</button>
+        </div>
+      </section>
+    </main>
 
-  </div>
+  </section>
 
-  <!-- IMPORTANT: Only app.js is responsible for loading XML -->
   <script src="app.js"></script>
-
 </body>
 </html>
