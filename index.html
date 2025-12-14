@@ -3,106 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Virtualization Exam (100 MCQs)</title>
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <title>Virtualization Quiz (100)</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-app">
+<body>
+  <div class="page">
 
-  <!-- Top Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-glass sticky-top border-bottom border-white border-opacity-10">
-    <div class="container py-2">
-      <div class="d-flex flex-column">
-        <a class="navbar-brand fw-bold mb-0" href="#">Virtualization Exam</a>
-        <small class="text-white-50">Storage • Network • VMs/Templates • KVM • Xen</small>
+    <!-- Header -->
+    <header class="hero">
+      <h1 class="hero-title">PowerPoint Quiz Template</h1>
+
+      <!-- Ribbon Question -->
+      <div class="ribbon">
+        <div class="ribbon-cap left"></div>
+        <div class="ribbon-body">
+          <div class="qtext" id="questionText"></div>
+        </div>
+        <div class="ribbon-cap right"></div>
       </div>
+    </header>
 
-      <div class="d-flex gap-2 align-items-center ms-auto">
-        <button id="btnExpandAll" class="btn btn-sm btn-outline-light">Expand</button>
-        <button id="btnCollapseAll" class="btn btn-sm btn-outline-light">Collapse</button>
-        <button id="btnRetry" class="btn btn-sm btn-outline-light" disabled>Retry</button>
-        <button id="btnSubmit" class="btn btn-sm btn-primary fw-semibold">Submit</button>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container my-4">
-
-    <!-- Controls Card -->
-    <div class="card card-glass shadow-soft mb-3">
-      <div class="card-body">
-        <div class="row g-3 align-items-end">
-          <div class="col-12 col-lg-5">
-            <label class="form-label text-white-50 mb-1">Search</label>
-            <input id="searchInput" class="form-control form-control-lg bg-dark-subtle border-0 text-white"
-                   type="search" placeholder="Search (e.g., VLAN, SAN, KVM, template)..." />
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3">
-            <label class="form-label text-white-50 mb-1">Topic</label>
-            <select id="filterSelect" class="form-select form-select-lg bg-dark-subtle border-0 text-white">
-              <option value="ALL">All topics</option>
-              <option value="STORAGE">Storage</option>
-              <option value="NETWORK">Network</option>
-              <option value="VMS">VMs/Templates</option>
-              <option value="KVM">KVM/QEMU</option>
-              <option value="XEN">Xen</option>
-            </select>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-2">
-            <label class="form-label text-white-50 mb-1">Difficulty</label>
-            <select id="difficultySelect" class="form-select form-select-lg bg-dark-subtle border-0 text-white">
-              <option value="ALL">All</option>
-              <option value="EASY">Easy</option>
-              <option value="MEDIUM">Medium</option>
-              <option value="HARD">Hard</option>
-            </select>
-          </div>
-
-          <div class="col-12 col-lg-2">
-            <div class="d-flex flex-column gap-2">
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge rounded-pill text-bg-dark border border-white border-opacity-10" id="answeredPill">
-                  Answered: 0 / 100
-                </span>
-                <span class="badge rounded-pill text-bg-dark border border-white border-opacity-10" id="timerPill">
-                  Timer: Off
-                </span>
-              </div>
-
-              <div class="d-flex flex-wrap gap-3">
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" role="switch" id="timerToggle">
-                  <label class="form-check-label text-white-50" for="timerToggle">60 min timer</label>
-                </div>
-
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" role="switch" id="teacherToggle">
-                  <label class="form-check-label text-white-50" for="teacherToggle">Teacher mode</label>
-                </div>
-              </div>
-            </div>
+    <!-- Main -->
+    <main class="main">
+      <div class="topRow">
+        <div class="progress">
+          <span id="progressText">Question 1 / 100</span>
+          <div class="progressBar">
+            <div class="progressFill" id="progressFill"></div>
           </div>
         </div>
 
-        <div id="resultBox" class="alert alert-dark border border-white border-opacity-10 mt-3 mb-0 d-none" role="status" aria-live="polite"></div>
+        <div class="score" id="scoreText">Score: 0</div>
       </div>
-    </div>
 
-    <!-- Quiz -->
-    <div id="quiz" class="vstack gap-3"></div>
+      <!-- Options Grid -->
+      <section class="grid" id="optionsGrid"></section>
 
-    <footer class="text-center text-white-50 small mt-4 pb-4">
-      Built with Bootstrap 5 • GitHub Pages Ready
-    </footer>
-  </main>
+      <!-- Bottom Controls -->
+      <section class="controls">
+        <div class="feedback" id="feedbackBox" aria-live="polite"></div>
 
-  <!-- Bootstrap JS (optional, not required but nice for components) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="btnRow">
+          <button class="btn ghost" id="btnPrev" type="button">Previous</button>
+          <button class="btn primary" id="btnSubmit" type="button" disabled>Submit</button>
+          <button class="btn primary" id="btnNext" type="button" disabled>Next</button>
+          <button class="btn ghost" id="btnRestart" type="button">Restart</button>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="questions.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
