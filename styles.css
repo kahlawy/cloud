@@ -1,5 +1,10 @@
 :root {
-  --teal: #1aa189;
+  --deep-green: #0f3d3e;
+  --sage-green: #7da598;
+  /* Muted sage for buttons */
+
+  --teal: var(--sage-green);
+  /* Fallback/Replaced */
   --bg: #f4f6f8;
   --card: #ffffff;
   --ink: #0b0f14;
@@ -47,8 +52,8 @@ body {
   justify-content: center;
   padding: 24px 14px;
   background:
-    radial-gradient(1100px 650px at 15% -10%, rgba(91, 123, 255, .18), transparent 55%),
-    radial-gradient(900px 600px at 90% 10%, rgba(185, 91, 255, .14), transparent 55%),
+    radial-gradient(1100px 650px at 15% -10%, rgba(15, 61, 62, .18), transparent 55%),
+    radial-gradient(900px 600px at 90% 10%, rgba(125, 165, 152, .14), transparent 55%),
     var(--bg);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
@@ -66,7 +71,7 @@ body {
 }
 
 .setupHeader {
-  background: var(--teal);
+  background: var(--deep-green);
   color: #fff;
   padding: 20px 22px;
   display: flex;
@@ -188,7 +193,7 @@ body {
 }
 
 .pptHero {
-  background: var(--teal);
+  background: var(--deep-green);
   padding: 42px 16px 58px;
 }
 
@@ -287,7 +292,7 @@ body {
 .progressFill {
   height: 100%;
   width: 0%;
-  background: rgba(26, 161, 137, .95);
+  background: var(--sage-green);
   border-radius: 999px;
   transition: width .25s ease;
 }
@@ -347,40 +352,42 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: #fff;
+  background: #f3f4f6;
+  /* Light grey instead of white on white */
+  color: var(--deep-green);
+  /* Thematic text color */
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
   font-size: 22px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
 }
 
 .choice .text {
-  color: #fff;
+  color: var(--ink);
   font-size: 14px;
   line-height: 1.35;
 }
 
-.choice[data-key="A"] {
-  background: var(--a);
+/* Neutralize choice colors to match standard theme */
+.choice[data-key] {
+  background: var(--card);
+  color: var(--ink);
 }
 
-.choice[data-key="B"] {
-  background: var(--b);
+.choice:hover {
+  background: #f9fafb;
 }
 
-.choice[data-key="C"] {
-  background: var(--c);
-}
-
-.choice[data-key="D"] {
-  background: var(--d);
+.choice .text {
+  color: var(--ink);
+  /* Ensure text is visible on white */
 }
 
 .choice.selected {
   border-color: rgba(255, 255, 255, .9);
-  outline: 3px solid rgba(26, 161, 137, .25);
+  outline: 3px solid var(--sage-green);
 }
 
 .choice.correct {
@@ -447,8 +454,8 @@ body {
 }
 
 .btn.primary {
-  background: var(--teal);
-  border-color: rgba(26, 161, 137, .35);
+  background: var(--sage-green);
+  border-color: var(--sage-green);
   color: #fff;
   font-weight: 800;
 }
