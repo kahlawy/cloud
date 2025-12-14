@@ -1,20 +1,17 @@
 :root{
   --teal:#1aa189;
   --bg:#f4f6f8;
-
+  --card:#ffffff;
   --ink:#0b0f14;
   --muted:#6b7280;
 
-  --a:#243241;   /* dark slate */
-  --b:#95b94d;   /* green */
-  --c:#f3a11b;   /* orange */
-  --d:#c33a2b;   /* red */
+  --a:#243241;
+  --b:#95b94d;
+  --c:#f3a11b;
+  --d:#c33a2b;
 
   --shadow: 0 18px 50px rgba(0,0,0,.14);
   --softShadow: 0 12px 30px rgba(0,0,0,.10);
-
-  --radius: 999px;
-  --cardRadius: 18px;
   --maxW: 1200px;
 }
 
@@ -22,21 +19,139 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family: ui-serif, Georgia, "Times New Roman", serif;
   background: var(--bg);
   color: var(--ink);
 }
 
-.page{
-  min-height:100%;
+.hidden{ display:none !important; }  /* مهم جدًا: يمنع ظهور الشاشتين */
+
+.screen{ min-height:100vh; }
+
+/* ================= SETUP SCREEN ================= */
+.setupScreen{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 24px 14px;
+  background:
+    radial-gradient(1100px 650px at 15% -10%, rgba(91,123,255,.18), transparent 55%),
+    radial-gradient(900px 600px at 90% 10%, rgba(185,91,255,.14), transparent 55%),
+    var(--bg);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-.hero{
+.setupShell{ width:min(920px, 96vw); }
+
+.setupCard{
+  background: var(--card);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0,0,0,.06);
+  overflow:hidden;
+}
+
+.setupHeader{
+  background: var(--teal);
+  color:#fff;
+  padding: 20px 22px;
+  display:flex;
+  justify-content:space-between;
+  gap: 12px;
+  align-items:flex-start;
+}
+
+.setupTitle{ margin:0; font-size: 28px; font-weight: 800; }
+.setupSub{ margin:8px 0 0; opacity:.92; }
+.badge{
+  background: rgba(255,255,255,.18);
+  border: 1px solid rgba(255,255,255,.28);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.setupBody{ padding: 18px 22px 10px; }
+
+.grid2{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 760px){
+  .grid2{ grid-template-columns: 1fr; }
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap: 6px;
+}
+.field label{ font-weight: 700; }
+.field input{
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,.12);
+  font-size: 16px;
+}
+.field small{ color: var(--muted); }
+
+.toggles{
+  margin-top: 14px;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+.toggle{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  user-select:none;
+}
+.toggle input{ transform: scale(1.15); }
+
+.setupActions{
+  margin-top: 16px;
+  display:flex;
+  gap: 10px;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+}
+
+.setupMsg{
+  margin-top: 12px;
+  min-height: 22px;
+  color: var(--muted);
+}
+
+.setupFooter{
+  border-top: 1px solid rgba(0,0,0,.06);
+  background: rgba(0,0,0,.02);
+  padding: 14px 22px 16px;
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+.pill{
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,.06);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ================= QUIZ SCREEN (PPT TEMPLATE) ================= */
+.quizScreen{
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+}
+
+.pptHero{
   background: var(--teal);
   padding: 42px 16px 58px;
 }
 
-.hero-title{
+.pptTitle{
   margin:0;
   text-align:center;
   color:#fff;
@@ -45,8 +160,7 @@ body{
   letter-spacing: .3px;
 }
 
-.ribbon{
-  position:relative;
+.pptRibbon{
   margin: 24px auto 0;
   max-width: min(var(--maxW), 92vw);
   display:flex;
@@ -54,73 +168,64 @@ body{
   justify-content:center;
 }
 
-.ribbon-cap{
-  width: 70px;
+.pptRibbon .cap{
+  width: 72px;
   height: 68px;
-  background: transparent;
-  position: relative;
+  position:relative;
 }
-
-.ribbon-cap.left::before{
+.pptRibbon .cap.left::before{
   content:"";
   position:absolute; inset:0;
   background:#fff;
   clip-path: polygon(100% 0, 0 50%, 100% 100%, 100% 0);
   box-shadow: var(--softShadow);
 }
-.ribbon-cap.right::before{
+.pptRibbon .cap.right::before{
   content:"";
   position:absolute; inset:0;
   background:#fff;
   clip-path: polygon(0 0, 100% 50%, 0 100%, 0 0);
   box-shadow: var(--softShadow);
 }
-
-.ribbon-body{
+.pptRibbon .body{
   background:#fff;
   padding: 20px 26px;
   min-height: 68px;
-  flex: 1;
+  flex:1;
   display:flex;
   align-items:center;
   justify-content:center;
   box-shadow: var(--softShadow);
 }
-
 .qtext{
-  font-family: ui-serif, Georgia, "Times New Roman", serif;
-  font-weight: 700;
+  font-weight: 800;
   text-align:center;
   font-size: clamp(16px, 1.6vw, 24px);
   line-height: 1.4;
   max-width: 980px;
 }
 
-.main{
+.pptMain{
   max-width: min(var(--maxW), 92vw);
   margin: 0 auto;
-  padding: 28px 0 36px;
+  padding: 26px 0 34px;
 }
 
-.topRow{
+.statusRow{
   display:flex;
-  justify-content:space-between;
   align-items:flex-start;
+  justify-content:space-between;
   gap: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
-.progress{
-  flex: 1;
-}
-.progress span{
-  display:block;
+.progressWrap{ flex:1; }
+.progressTop{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--muted);
   font-size: 14px;
   margin-bottom: 8px;
 }
-
 .progressBar{
   height: 10px;
   background: rgba(0,0,0,.08);
@@ -129,37 +234,43 @@ body{
 }
 .progressFill{
   height:100%;
-  width: 0%;
+  width:0%;
   background: rgba(26,161,137,.95);
   border-radius: 999px;
   transition: width .25s ease;
 }
 
-.score{
+.stats{
+  min-width: 170px;
+  text-align:right;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--muted);
   font-size: 14px;
-  padding-top: 2px;
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+}
+.statLine b{
+  color: #111827;
+  font-variant-numeric: tabular-nums;
 }
 
-.grid{
+.choicesGrid{
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap: 42px 60px;
-  padding: 28px 0 10px;
+  padding: 24px 0 8px;
 }
-
 @media (max-width: 920px){
-  .grid{ grid-template-columns: 1fr; gap: 18px; }
+  .choicesGrid{ grid-template-columns: 1fr; gap: 18px; }
 }
 
 .choice{
   position:relative;
   display:flex;
   align-items:center;
-  gap: 14px;
   padding: 16px 18px 16px 72px;
-  border-radius: var(--radius);
+  border-radius: 999px;
   cursor:pointer;
   user-select:none;
   box-shadow: var(--shadow);
@@ -167,7 +278,6 @@ body{
   transition: transform .12s ease, border-color .12s ease, filter .12s ease;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
-
 .choice:hover{ transform: translateY(-1px); filter: brightness(1.01); }
 
 .choice .letter{
@@ -180,11 +290,10 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 22px;
   box-shadow: 0 12px 30px rgba(0,0,0,.12);
 }
-
 .choice .text{
   color:#fff;
   font-size: 14px;
@@ -200,19 +309,14 @@ body{
   border-color: rgba(255,255,255,.9);
   outline: 3px solid rgba(26,161,137,.25);
 }
+.choice.correct{ border-color: rgba(25,135,84,.95); }
+.choice.wrong{ border-color: rgba(220,53,69,.95); }
 
-.choice.correct{
-  border-color: rgba(25,135,84,.9);
-}
-.choice.wrong{
-  border-color: rgba(220,53,69,.9);
-}
-
-.controls{
-  margin-top: 18px;
+.bottom{
+  margin-top: 16px;
   display:flex;
   flex-direction:column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .feedback{
@@ -258,8 +362,6 @@ body{
   background: var(--teal);
   border-color: rgba(26,161,137,.35);
   color:#fff;
-  font-weight:700;
+  font-weight:800;
 }
-.btn.ghost{
-  background: rgba(255,255,255,.85);
-}
+.btn.ghost{ background: rgba(255,255,255,.9); }
