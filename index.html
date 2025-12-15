@@ -37,7 +37,25 @@
             </div>
           </div>
 
+          <div class="fileUploadSection">
+            <div class="uploadHeader">
+              <svg class="uploadIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span>Or load questions from file</span>
+            </div>
+            <label for="xmlFileInput" class="fileUploadLabel">
+              <input id="xmlFileInput" type="file" accept=".xml" class="fileInput" />
+              <span class="fileUploadBtn">📁 Choose XML File</span>
+            </label>
+            <small class="uploadHint">Select questions.xml or any custom XML file</small>
+          </div>
+
           <div class="toggles">
+
             <label class="toggle">
               <input id="shuffleToggle" type="checkbox" checked />
               <span>Shuffle questions</span>
@@ -50,7 +68,6 @@
           </div>
 
           <div class="setupActions">
-            <button id="btnLoad" class="btn ghost" type="button">Reload XML</button>
             <button id="btnStart" class="btn primary" type="button">Start Quiz</button>
           </div>
 
@@ -114,7 +131,6 @@
 
   </section>
 
-  <script src="questions.js"></script>
   <script src="app.js"></script>
 </body>
 

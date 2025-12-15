@@ -187,7 +187,83 @@ body {
   font-size: 12px;
 }
 
+/* ================= FILE UPLOAD SECTION ================= */
+.fileUploadSection {
+  margin-top: 20px;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(15, 61, 62, 0.04), rgba(125, 165, 152, 0.06));
+  border-radius: 14px;
+  border: 2px dashed rgba(15, 61, 62, 0.2);
+  transition: all 0.3s ease;
+}
+
+.fileUploadSection:hover {
+  border-color: var(--sage-green);
+  background: linear-gradient(135deg, rgba(15, 61, 62, 0.06), rgba(125, 165, 152, 0.08));
+}
+
+.uploadHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: var(--deep-green);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.uploadIcon {
+  color: var(--sage-green);
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.fileUploadLabel {
+  display: block;
+  cursor: pointer;
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileUploadBtn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  background: var(--deep-green);
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(15, 61, 62, 0.2);
+}
+
+.fileUploadBtn:hover {
+  background: var(--sage-green);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(125, 165, 152, 0.3);
+}
+
+.fileUploadBtn:active {
+  transform: translateY(0);
+}
+
+.uploadHint {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
 /* ================= QUIZ SCREEN (PPT TEMPLATE) ================= */
+
 .quizScreen {
   font-family: ui-serif, Georgia, "Times New Roman", serif;
 }

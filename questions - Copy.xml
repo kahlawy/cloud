@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <!-- Exam_3 -->
+  <question id="1" topic="Storage" difficulty="Easy">
+    <text>...... is not a storage resource type.</text>
+    <option key="A" correct="true">Local memory</option>
+    <option key="B" correct="false">SAN</option>
+    <option key="C" correct="false">NAS</option>
+    <option key="D" correct="false">All of the above</option>
+    <explanation>Answer taken from Exam_3 PDF (selected option A).</explanation>
+  </question>
+
+  <question id="2" topic="Storage" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
+    <option key="A" correct="false">A data store indicates a manageable and operable logical storage unit.</option>
+    <option key="B" correct="true">A data store can contain multiple storage devices.</option>
+    <option key="C" correct="false">A data store carries specific VM services, such as disk creation.</option>
+    <option key="D" correct="false">None of the above.</option>
+    <explanation>Answer taken from Exam_3 PDF (selected option B).</explanation>
+  </question>
+
+  <question id="3" topic="Storage" difficulty="Easy">
+    <text>Disk from common disk type</text>
+    <option key="A" correct="true">can be used by only one VM.</option>
+    <option key="B" correct="false">can be used by multiple VMs.</option>
+    <option key="C" correct="false">cannot be used by any VM.</option>
+    <option key="D" correct="false">none of the above.</option>
+    <explanation>Answer taken from Exam_3 PDF (selected option A).</explanation>
+  </question>
+
+  <question id="4" topic="Storage" difficulty="Easy">
+    <text>Network Attached Storage (NAS) supports</text>
+    <option key="A" correct="false">virtualized data stores.</option>
+    <option key="B" correct="false">thin provisioning.</option>
+    <option key="C" correct="false">advanced features, such as snapshots.</option>
+    <option key="D" correct="true">all of the above.</option>
+    <explanation>Answer taken from Exam_3 PDF (selected option D).</explanation>
+  </question>
+
+  <question id="5" topic="Storage" difficulty="Easy">
+    <text>Which of the following is provided by FC SAN as a storage device</text>
+    <option key="A" correct="false">Shared directory.</option>
+    <option key="B" correct="true">Logical unit number (LUN).</option>
+    <option key="C" correct="false">Storage pool.</option>
+    <option key="D" correct="false">None of the above.</option>
+    <explanation>Answer taken from Exam_3 PDF (selected option B).</explanation>
+  </question>
+
+  <question id="6" topic="Storage" difficulty="Easy">
+    <text>Which of the following storage resources provides shared directory as a storage device</text>
+    <option key="A" correct="false">SAN.</option>
+    <option key="B" correct="true">NAS.</option>
+    <option key="C" correct="false">Local disk.</option>
+    <option key="D" correct="false">None of the above.</option>
+    <explanation>Answer taken from Exam_3 PDF (selected option B).</explanation>
+  </question>
+
+
+  <!-- Exam_4 -->
+  <question id="7" topic="Network" difficulty="Easy">
+    <text>Access link in VLAN is used to connect</text>
+    <option key="A" correct="false">host to host.</option>
+    <option key="B" correct="true">host to switch.</option>
+    <option key="C" correct="false">switch to switch.</option>
+    <option key="D" correct="false">switch to router.</option>
+    <explanation>Answer taken from Exam_4 PDF (selected option B).</explanation>
+  </question>
+
+  <question id="8" topic="Network" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
+    <option key="A" correct="true">Standard vSwitches can be deployed across physical servers.</option>
+    <option key="B" correct="false">DVS can be connected to multiple physical servers.</option>
+    <option key="C" correct="false">Physical server can be connected to multiple standard vSwitches.</option>
+    <option key="D" correct="false">Physical server can be connected to multiple DVS.</option>
+    <explanation>Answer taken from Exam_4 PDF (selected option A).</explanation>
+  </question>
+
+  <question id="9" topic="Network" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
+    <option key="A" correct="false">The virtual local area network (VLAN) can isolate broadcast domains.</option>
+    <option key="B" correct="false">Users in different VLANs cannot communicate with each other.</option>
+    <option key="C" correct="true">The VLAN technology divides users into multiple physical networks (groups).</option>
+    <option key="D" correct="false">The VLAN technology provides a management method to control the communication between terminals.</option>
+    <explanation>Answer taken from Exam_4 PDF (selected option C).</explanation>
+  </question>
+
+  <question id="10" topic="Network" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
+    <option key="A" correct="false">Trunk link can connect switches.</option>
+    <option key="B" correct="true">Frames transmitted on the trunk link are untagged frames.</option>
+    <option key="C" correct="false">Trunk link can carry data from different VLANs.</option>
+    <option key="D" correct="false">Trunk link can connect switch to a router.</option>
+    <explanation>Answer taken from Exam_4 PDF (selected option B).</explanation>
+  </question>
+
+  <question id="11" topic="Network" difficulty="Easy">
+    <text>Uplinks in VLAN is used to connect</text>
+    <option key="A" correct="false">Switch to switch</option>
+    <option key="B" correct="true">DVS to physical NIC</option>
+    <option key="C" correct="false">host to switch.</option>
+    <option key="D" correct="false">None of the above.</option>
+    <explanation>Answer taken from Exam_4 PDF (selected option B).</explanation>
+  </question>
+
+
+  <!-- Exam_5 -->
+  <question id="12" topic="VMs" difficulty="Medium">
+    <text>Which of the following conditions are not required to migrate VM storage from data store to another data store?</text>
+    <option key="A" correct="false">The destination data store has sufficient storage space.</option>
+    <option key="B" correct="false">The source and destination storage devices are associated with the same host.</option>
+    <option key="C" correct="true">No graphics processing units (GPUs) are mounted to the VMs.</option>
+    <option key="D" correct="false">All of the above.</option>
+    <explanation>Answer taken from Exam_5 PDF (selected option C).</explanation>
+  </question>
+
+  <question id="13" topic="VMs" difficulty="Easy">
+    <text>Which of the following obtains CPUs and memory resources from the host?</text>
+    <option key="A" correct="false">VM template.</option>
+    <option key="B" correct="true">VM.</option>
+    <option key="C" correct="false">VM and VM template.</option>
+    <option key="D" correct="false">None of the above.</option>
+    <explanation>Answer taken from Exam_5 PDF (selected option B).</explanation>
+  </question>
+
+  <question id="14" topic="VMs" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
+    <option key="A" correct="false">A VM template is a copy of a VM containing an OS, applications, and VM specifications.</option>
+    <option key="B" correct="false">VM template does not occupy disk resources.</option>
+    <option key="C" correct="false">The VM template is used to create VMs in batches.</option>
+    <option key="D" correct="true">VM template runs applications to process computing tasks.</option>
+    <explanation>Answer taken from Exam_5 PDF (selected option D).</explanation>
+  </question>
+
+  <question id="15" topic="VMs" difficulty="Easy">
+    <text>Which of the following methods is not used to create VM template?</text>
+    <option key="A" correct="false">Convert a VM into a VM template.</option>
+    <option key="B" correct="false">Clone a VM to a VM template.</option>
+    <option key="C" correct="true">Create a bare VM template.</option>
+    <option key="D" correct="false">Clone a VM template to a VM template.</option>
+    <explanation>Answer taken from Exam_5 PDF (selected option C).</explanation>
+  </question>
+
+  <question id="16" topic="VMs" difficulty="Easy">
+    <text>How many CPUs in a VM if it has two Dual core sockets?</text>
+    <option key="A" correct="false">One</option>
+    <option key="B" correct="false">Two</option>
+    <option key="C" correct="false">Three</option>
+    <option key="D" correct="true">Four</option>
+    <explanation>Answer taken from Exam_5 PDF (selected option D).</explanation>
+  </question>
+
+  <question id="17" topic="VMs" difficulty="Hard">
+    <text>Which of the following does not prevent migrating VM storage from data store to another data store?</text>
+    <option key="A" correct="false">Shared disks that have been attached to VM.</option>
+    <option key="B" correct="false">Disks on which clone disks are attached to VM.</option>
+    <option key="C" correct="false">Disks that contain VM snapshots.</option>
+    <option key="D" correct="true">None of the above.</option>
+    <explanation>Answer taken from Exam_5 PDF (selected option D).</explanation>
+  </question>
+
+  <question id="18" topic="VMs" difficulty="Easy">
+    <text>Which of the following methods is the most common method for creating VMs?</text>
+    <option key="A" correct="false">Convert a VM template to a VM.</option>
+    <option key="B" correct="false">Clone a VM to a VM.</option>
+    <option key="C" correct="false">Create a bare VM.</option>
+    <option key="D" correct="true">Create a VM using a VM template.</option>
+    <explanation>Answer taken from Exam_5 PDF (selected option D).</explanation>
+  </question>
+
+</quiz>

@@ -76,57 +76,128 @@ function parseXmlQuestions(xmlText) {
   return parsed;
 }
 
+/* =========================================
+   FILE UPLOAD HANDLER (Chrome Compatible)
+   ========================================= */
+async function loadXmlFromFile(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+      try {
+        const xmlText = e.target.result;
+        const questions = parseXmlQuestions(xmlText);
+        resolve(questions);
+      } catch (err) {
+        reject(new Error(`Failed to parse XML: ${err.message}`));
+      }
+    };
+
+    reader.onerror = () => {
+      reject(new Error('Failed to read file'));
+    };
+
+    reader.readAsText(file);
+  });
+}
+
 async function loadXml() {
-  setSetupMessage("Loading questions.xml ...");
 
-  try {
-    const xmlUrl = new URL("./questions.xml", window.location.href).toString();
+  setSetupMessage("Loading XML files...");
 
-    const res = await fetch(xmlUrl, { cache: "no-store" });
-    if (!res.ok) {
-      throw new Error(`Failed to load questions.xml (${res.status})`);
+  // List of XML files to attempt loading
+  // Add more XML files here if you have them
+  const xmlFiles = [
+    "questions.xml"
+  ];
+
+  let allLoadedQuestions = [];
+  let successCount = 0;
+  let failCount = 0;
+
+  // Try to load each XML file
+  for (const fileName of xmlFiles) {
+    try {
+      const xmlUrl = new URL(`./${fileName}`, window.location.href).toString();
+      const res = await fetch(xmlUrl, { cache: "no-store" });
+
+      if (!res.ok) {
+        console.warn(`Could not load ${fileName} (${res.status})`);
+        failCount++;
+        continue;
+      }
+
+      const xmlText = await res.text();
+
+      // Quick sanity check
+      if (xmlText.trim().startsWith("<!doctype") || xmlText.trim().startsWith("<html")) {
+        console.warn(`${fileName} returned HTML instead of XML`);
+        failCount++;
+        continue;
+      }
+
+      // Parse this XML file
+      const questions = parseXmlQuestions(xmlText);
+      allLoadedQuestions.push(...questions);
+      successCount++;
+      console.log(`Loaded ${fileName}: ${questions.length} questions`);
+
+    } catch (err) {
+      console.warn(`Failed to load ${fileName}:`, err.message);
+      failCount++;
+    }
+  }
+
+  // If we loaded at least one file successfully
+  if (allLoadedQuestions.length > 0) {
+    // Remove duplicates based on question text and options
+    const uniqueQuestions = [];
+    const seenKeys = new Set();
+
+    for (const q of allLoadedQuestions) {
+      // Create a unique key based on question text and first option
+      const key = `${q.question.toLowerCase().trim()}|${q.options[0].toLowerCase().trim()}`;
+      if (!seenKeys.has(key)) {
+        seenKeys.add(key);
+        uniqueQuestions.push(q);
+      }
     }
 
-    const xmlText = await res.text();
-
-    // Quick sanity check (helps if server returns HTML instead of XML)
-    if (xmlText.trim().startsWith("<!doctype") || xmlText.trim().startsWith("<html")) {
-      throw new Error("Server returned HTML instead of XML. Check filename/path.");
-    }
-
-    allQuestions = parseXmlQuestions(xmlText);
+    allQuestions = uniqueQuestions;
 
     const max = allQuestions.length;
     countInput.max = String(max);
     if (Number(countInput.value) > max) countInput.value = String(max);
     countHint.textContent = `Max available: ${max}`;
 
-    setSetupMessage(`Loaded ${max} questions successfully.`);
-    console.log("Loaded XML OK:", xmlUrl, "Questions:", max);
-
-  } catch (err) {
-    // Fallback for local files (CORS error) or fetch failure
-    if (typeof LOCAL_XML_DATA !== 'undefined' && LOCAL_XML_DATA.trim().length > 0) {
-      console.warn("Fetch failed, using local fallback data.");
-      try {
-        allQuestions = parseXmlQuestions(LOCAL_XML_DATA);
-        const max = allQuestions.length;
-        countInput.max = String(max);
-        if (Number(countInput.value) > max) countInput.value = String(max);
-        countHint.textContent = `Max available: ${max}`;
-        setSetupMessage(`Loaded ${max} questions (Local Mode).`);
-        return;
-      } catch (parseErr) {
-        console.error("Local fallback parse error:", parseErr);
-      }
-    }
-
-    allQuestions = [];
-    countHint.textContent = "Max depends on questions.xml";
-    setSetupMessage(err.message || "Failed to load XML.", true);
-    console.error("XML load/parse error:", err);
+    setSetupMessage(`Loaded ${max} unique questions from ${successCount} file(s).`);
+    console.log(`Total: ${max} unique questions from ${successCount} XML file(s)`);
+    return;
   }
+
+  // If all files failed, try LOCAL_XML_DATA fallback
+  if (typeof LOCAL_XML_DATA !== 'undefined' && LOCAL_XML_DATA.trim().length > 0) {
+    console.warn("All XML files failed, using local fallback.");
+    try {
+      allQuestions = parseXmlQuestions(LOCAL_XML_DATA);
+      const max = allQuestions.length;
+      countInput.max = String(max);
+      if (Number(countInput.value) > max) countInput.value = String(max);
+      countHint.textContent = `Max available: ${max}`;
+      setSetupMessage(`Loaded ${max} questions (Local Mode).`);
+      return;
+    } catch (parseErr) {
+      console.error("Local fallback parse error:", parseErr);
+    }
+  }
+
+  // Complete failure
+  allQuestions = [];
+  countHint.textContent = "No questions available";
+  setSetupMessage("⚠️ Auto-load failed. Please upload an XML file manually using the button above.", true);
+  console.error("XML load error: All files failed to load");
 }
+
 
 /* =========================================
    STATE & DOM
@@ -153,7 +224,6 @@ const teacherToggle = document.getElementById("teacherToggle");
 const setupMsg = document.getElementById("setupMsg");
 
 // Buttons
-const btnLoad = document.getElementById("btnLoad");
 const btnStart = document.getElementById("btnStart");
 const btnPrev = document.getElementById("btnPrev");
 const btnSubmit = document.getElementById("btnSubmit");
@@ -173,12 +243,35 @@ const timerText = document.getElementById("timerText");
    INIT & LISTENERS
    ========================================= */
 window.addEventListener("DOMContentLoaded", () => {
-  loadXml(); // Auto-load on start
+  loadXml(); // Auto-load on start (fallback)
 });
 
-btnLoad.addEventListener("click", loadXml);
+// File Upload Handler
+const xmlFileInput = document.getElementById("xmlFileInput");
+xmlFileInput.addEventListener("change", async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  try {
+    setSetupMessage(`Loading ${file.name}...`);
+    const questions = await loadXmlFromFile(file);
+
+    allQuestions = questions;
+    const max = allQuestions.length;
+    countInput.max = String(max);
+    if (Number(countInput.value) > max) countInput.value = String(max);
+    countHint.textContent = `Max available: ${max}`;
+
+    setSetupMessage(`✅ Successfully loaded ${max} question${max > 1 ? 's' : ''} from ${file.name}`);
+    console.log(`Manual upload: ${max} questions from ${file.name}`);
+  } catch (err) {
+    setSetupMessage(`❌ Error: ${err.message}`, true);
+    console.error("File upload error:", err);
+  }
+});
 
 btnStart.addEventListener("click", () => {
+
   if (allQuestions.length === 0) {
     setSetupMessage("Cannot start: No questions loaded.", true);
     return;

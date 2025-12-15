@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question id="1" topic="Storage" difficulty="Easy">
+    <text>Which statement best describes a data store in a virtualization platform?</text>
+    <option key="A" correct="false">A physical SAS disk connected to a host</option>
+    <option key="B" correct="true">A logical container that abstracts storage devices to store VM files</option>
+    <option key="C" correct="false">A network protocol used for NAS</option>
+    <option key="D" correct="false">A type of virtual CPU</option>
+    <explanation>Storage virtualization abstracts resources on storage devices into data stores, which are logical containers similar to file systems[cite: 86, 88].</explanation>
+  </question>
+  <question id="2" topic="Storage" difficulty="Medium">
+    <text>Which file system is described as a high-performance file system optimized for storing VMs in the FusionCompute environment?</text>
+    <option key="A" correct="false">NTFS</option>
+    <option key="B" correct="false">FAT32</option>
+    <option key="C" correct="false">EXT4</option>
+    <option key="D" correct="true">VIMS</option>
+    <explanation>VIMS is a high-performance file system optimized for storing VMs and can be stored on local or shared storage devices based on SCSI[cite: 103].</explanation>
+  </question>
+  <question id="3" topic="Storage" difficulty="Easy">
+    <text>Which protocol is utilized by NAS (Network Attached Storage) to provide shared directory access?</text>
+    <option key="A" correct="false">iSCSI</option>
+    <option key="B" correct="true">NFS</option>
+    <option key="C" correct="false">Fibre Channel</option>
+    <option key="D" correct="false">SMI-S</option>
+    <explanation>NAS provides shared directories that are scanned and mounted through the NFS protocol[cite: 186].</explanation>
+  </question>
+  <question id="4" topic="Storage" difficulty="Hard">
+    <text>Which feature allows physical raw devices to be mapped directly to VMs so that VM disks can receive SCSI commands?</text>
+    <option key="A" correct="true">Raw Device Mapping (RDM)</option>
+    <option key="B" correct="false">Thin Provisioning</option>
+    <option key="C" correct="false">Storage Virtualization</option>
+    <option key="D" correct="false">VIMS</option>
+    <explanation>RDM maps physical raw devices to VMs, allowing VM disks to receive SCSI commands, which is used in key business scenarios like databases[cite: 115, 116].</explanation>
+  </question>
+  <question id="5" topic="Storage" difficulty="Hard">
+    <text>If Raw Device Mapping (RDM) is used to deploy application cluster services (such as Oracle RAC), which feature must NOT be used?</text>
+    <option key="A" correct="true">VM Snapshot</option>
+    <option key="B" correct="false">VIMS Datastore</option>
+    <option key="C" correct="false">Storage Detachment</option>
+    <option key="D" correct="false">Thin Provisioning</option>
+    <explanation>If you use RDM devices to deploy application cluster services, do not use the VM snapshot and snapshot recovery functions as they may cause services to become abnormal[cite: 121, 122].</explanation>
+  </question>
+
+  <question id="6" topic="Network" difficulty="Easy">
+    <text>Which layer of the TCP/IP model is responsible for IP addressing and routing?</text>
+    <option key="A" correct="false">Physical Layer</option>
+    <option key="B" correct="false">Data Link Layer</option>
+    <option key="C" correct="true">Network Layer</option>
+    <option key="D" correct="false">Application Layer</option>
+    <explanation>The Network layer (Layer 3) connects different physical networks and performs IP addressing and routing[cite: 235, 303].</explanation>
+  </question>
+  <question id="7" topic="Network" difficulty="Medium">
+    <text>What is the process called when a data packet moves from Layer 4 down to Layer 3 and is added with an IP header?</text>
+    <option key="A" correct="false">Decapsulation</option>
+    <option key="B" correct="true">Encapsulation</option>
+    <option key="C" correct="false">Fragmentation</option>
+    <option key="D" correct="false">Routing</option>
+    <explanation>When a packet is sent from a higher layer to a lower layer (e.g., Layer 4 to 3), headers are added. This process is called encapsulation[cite: 333, 335].</explanation>
+  </question>
+  <question id="8" topic="Network" difficulty="Easy">
+    <text>Which device operates at Layer 2 (Data Link Layer) and supports forwarding based on Ethernet MAC addresses?</text>
+    <option key="A" correct="false">Router</option>
+    <option key="B" correct="false">Hub</option>
+    <option key="C" correct="true">Switch</option>
+    <option key="D" correct="false">Firewall</option>
+    <explanation>A switch operates at Layer 2, identifying protocols at the link layer and supporting forwarding based on Ethernet MAC addresses[cite: 313].</explanation>
+  </question>
+  <question id="9" topic="Network" difficulty="Easy">
+    <text>Which communication mode involves a source sending a packet to a specific, single receiver?</text>
+    <option key="A" correct="false">Broadcast</option>
+    <option key="B" correct="false">Multicast</option>
+    <option key="C" correct="true">Unicast</option>
+    <option key="D" correct="false">Anycast</option>
+    <explanation>In Unicast, the source end knows the receiver's address and uses it to establish a connection with that specific receiver[cite: 348].</explanation>
+  </question>
+  <question id="10" topic="Network" difficulty="Medium">
+    <text>In the OSI model, which layer provides end-to-end connections between hosts?</text>
+    <option key="A" correct="false">Physical Layer</option>
+    <option key="B" correct="false">Network Layer</option>
+    <option key="C" correct="true">Transport Layer</option>
+    <option key="D" correct="false">Session Layer</option>
+    <explanation>The Transport Layer (Layer 4) establishes an end-to-end connection between hosts[cite: 231].</explanation>
+  </question>
+
+  <question id="11" topic="VMs" difficulty="Easy">
+    <text>What is defined as a copy of a VM containing an OS, applications, and VM specifications, used to create new VMs?</text>
+    <option key="A" correct="false">Snapshot</option>
+    <option key="B" correct="false">Backup</option>
+    <option key="C" correct="true">Template</option>
+    <option key="D" correct="false">Clone</option>
+    <explanation>A VM template is a copy of a VM containing an OS, applications, and specifications, used to create VMs with OSs installed[cite: 69].</explanation>
+  </question>
+  <question id="12" topic="VMs" difficulty="Easy">
+    <text>Which entity is a software computer that functions like a physical computer, running an OS and applications?</text>
+    <option key="A" correct="false">Hypervisor</option>
+    <option key="B" correct="true">Virtual Machine (VM)</option>
+    <option key="C" correct="false">Host</option>
+    <option key="D" correct="false">Cluster</option>
+    <explanation>A virtual machine (VM) is a software computer that functions like a physical computer, running an operating system (OS) and applications[cite: 32].</explanation>
+  </question>
+  <question id="13" topic="VMs" difficulty="Medium">
+    <text>What is the primary advantage of creating a VM using a template compared to creating a bare VM?</text>
+    <option key="A" correct="false">It provides better hardware performance</option>
+    <option key="B" correct="true">It reduces the creation period and deployment time</option>
+    <option key="C" correct="false">It creates a larger disk size</option>
+    <option key="D" correct="false">It removes the need for a datastore</option>
+    <explanation>Creating VMs using a template reduces the creation period compared to the common method because the OS and applications are pre-installed[cite: 71].</explanation>
+  </question>
+  <question id="14" topic="VMs" difficulty="Hard">
+    <text>What happens to the template after it is converted into a VM?</text>
+    <option key="A" correct="false">It remains as a backup</option>
+    <option key="B" correct="true">The template disappears</option>
+    <option key="C" correct="false">It becomes a snapshot</option>
+    <option key="D" correct="false">It is duplicated</option>
+    <explanation>After a template is converted into a VM, the template disappears. All attributes of the VM are identical to those of the template[cite: 67].</explanation>
+  </question>
+  <question id="15" topic="VMs" difficulty="Medium">
+    <text>Which operation allows you to modify VM specifications such as adding a NIC or attaching a disk?</text>
+    <option key="A" correct="true">VM Modification</option>
+    <option key="B" correct="false">VM Creation</option>
+    <option key="C" correct="false">Template Import</option>
+    <option key="D" correct="false">Snapshot Reversion</option>
+    <explanation>After the VM is created, you can modify the VM specifications and peripheral devices, such as adding a NIC or attaching a disk[cite: 36].</explanation>
+  </question>
+</quiz>
