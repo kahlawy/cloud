@@ -328,157 +328,109 @@
     <option key="D" correct="false">Broadcast frames</option>
     <explanation></explanation>
   </question>
-  <question id="47" topic="SAN" difficulty="Medium">
-    <text>Inthe singie-switcning MOGe OT Ir SAN NEtwWOrKing, WNal allows MUITIPle NOSTS TO snare ne same storage device? |)</text>
+  <question id="43" topic="SAN" difficulty="Medium">
+    <text>In the single-switching mode of IP SAN networking, what allows multiple hosts to share the same storage device?</text>
     <option key="A" correct="false">Direct connections</option>
     <option key="B" correct="false">Ethernet cards</option>
     <option key="C" correct="false">Ethernet switch</option>
     <option key="D" correct="true">iSCSI HBA cards</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image29.png</explanation>
+    <explanation></explanation>
   </question>
-  <question id="48" topic="Mixed" difficulty="Medium">
-    <text>TEC LETS SITIO OMVICMT ETS SPIRIT TE SPIN PIS EUV E ANI ge WUTC CAPS PETES PIO LS A SHIGIe Lie same storage device?</text>
-    <option key="A" correct="false">Direct connections</option>
-    <option key="B" correct="false">Ethernet cards</option>
-    <option key="C" correct="true">Ethernet switch</option>
-    <option key="D" correct="false">iscsi HBA cards</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image30.png</explanation>
-  </question>
-  <question id="49" topic="Mixed" difficulty="Medium">
-    <text>Wnat Goes a router use Tor Torwaraing data packets’ I</text>
+  <question id="44" topic="Mixed" difficulty="Medium">
+    <text>What does a router use for forwarding data packets? </text>
     <option key="A" correct="false">Ethernet MAC addresses</option>
     <option key="B" correct="false">SDH ports</option>
     <option key="C" correct="false">Link layer protocols</option>
     <option key="D" correct="true">IP addresses</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image31.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="50" topic="Mixed" difficulty="Medium">
-    <text>What does a router use for forwarding data packets?</text>
-    <option key="A" correct="false">Ethernet MAC addresses</option>
-    <option key="B" correct="false">SDH ports</option>
-    <option key="C" correct="true">Link layer protocols</option>
-    <option key="D" correct="false">eo) IP addresses</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image32.png</explanation>
-  </question>
-  <question id="51" topic="Mixed" difficulty="Medium">
-    <text>What is the primary action of an access port when receiving a trame without a tag?</text>
+  <question id="45" topic="Mixed" difficulty="Medium">
+    <text>What is the primary action of an access port when receiving a frame without a tag?</text>
     <option key="A" correct="false">Removes the PVID tag</option>
     <option key="B" correct="false">Transmits the frame without modifications</option>
     <option key="C" correct="false">Discards the frame</option>
     <option key="D" correct="true">Tags the frame a the default VLAN ID</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image33.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="52" topic="Mixed" difficulty="Medium">
-    <text>What is the primary action of an access port when receiving a frame without a tag?</text>
-    <option key="A" correct="false">Removes the PVID tag</option>
-    <option key="B" correct="false">Transmits the frame without modifications</option>
-    <option key="C" correct="true">Discards the frame fe) Tags the frame with the default VLAN ID</option>
-    <option key="D" correct="false">Qubmit ancwer )</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image34.png</explanation>
-  </question>
-  <question id="53" topic="Mixed" difficulty="Medium">
-    <text>Meee eee ee eee oe es ene TN I EA FN ATT NR ETRE CUTE broadcast domain before the target receiver replies in unicast mode?</text>
-    <option key="A" correct="true">Multicast</option>
-    <option key="B" correct="false">Broadcast</option>
-    <option key="C" correct="false">Duplex</option>
-    <option key="D" correct="false">Unicast</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image35.png</explanation>
-  </question>
-  <question id="54" topic="Mixed" difficulty="Medium">
-    <text>What does the term port group refer to In the context of vowitcnes?</text>
+  <question id="46" topic="Mixed" difficulty="Medium">
+    <text>What does the term port group refer to in the context of vSwitches?</text>
     <option key="A" correct="false">Agroup of physical switch ports</option>
     <option key="B" correct="false">A network interface card (NIC) b</option>
     <option key="C" correct="false">Acollection of VMs on the same host</option>
     <option key="D" correct="true">A group of virtual switch ports</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image37.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="55" topic="VLAN" difficulty="Medium">
+  <question id="47" topic="VLAN" difficulty="Medium">
     <text>Which link type is more likely to be used for interconnecting vswitches within the same VLAN?</text>
     <option key="A" correct="true">Trunk link</option>
     <option key="B" correct="false">Router link</option>
-    <option key="C" correct="false">uplink cy)</option>
+    <option key="C" correct="false">Uplink</option>
     <option key="D" correct="false">Access link</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image39.png</explanation>
+    <explanation></explanation>
   </question>
-  <question id="56" topic="Mixed" difficulty="Medium">
-    <text>In a network, wnat Is the primary purpose of tagging frames on a [runk link?</text>
+  <question id="48" topic="Mixed" difficulty="Medium">
+    <text>In a network, what is the primary purpose of tagging frames on a Trunk link?</text>
     <option key="A" correct="true">To differentiate between VLANs</option>
     <option key="B" correct="false">To filter broadcast traffic</option>
-    <option key="C" correct="false">To eens the switch's IP address</option>
+    <option key="C" correct="false">To identify the switch's IP address</option>
     <option key="D" correct="false">To enhance network performance</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image41.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="57" topic="Mixed" difficulty="Medium">
-    <text>In a network, what Is the primary purpose of tagging frames ona Trunk link?</text>
-    <option key="A" correct="true">To differentiate between VLANs</option>
-    <option key="B" correct="false">To filter broadcast traffic</option>
-    <option key="C" correct="false">Tanfentty the switch's IP address</option>
-    <option key="D" correct="false">To enhance network performance</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image42.png (Correct option not detected.)</explanation>
-  </question>
-  <question id="58" topic="Mixed" difficulty="Medium">
-    <text>All of the following are storage units that can bg encapsulated into data stores except</text>
+    <question id="49" topic="Mixed" difficulty="Medium">
+    <text>All of the following are storage units that can be encapsulated into data stores except</text>
     <option key="A" correct="false">Local disks on hosts</option>
     <option key="B" correct="false">Storage pools on FusionStorage</option>
-    <option key="C" correct="false">None of the above</option>
-    <option key="D" correct="true">Local memory on hosts</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image43.png (Correct option not detected.)</explanation>
+    <option key="C" correct="true">None of the above</option>
+    <option key="D" correct="false">Local memory on hosts</option>
+    <explanation></explanation>
   </question>
-  <question id="59" topic="Mixed" difficulty="Medium">
+  <question id="50" topic="Mixed" difficulty="Medium">
     <text>All of the following are storage units that can be encapsulated into data stores except</text>
     <option key="A" correct="false">Local disks on hosts</option>
     <option key="B" correct="false">Storage poolon FusionStorage</option>
     <option key="C" correct="false">None of the above</option>
     <option key="D" correct="true">Local memory on hosts</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image44.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="60" topic="Mixed" difficulty="Medium">
+  <question id="51" topic="Mixed" difficulty="Medium">
     <text>All of the following are storage units thatcan be encapsulated into data stores except</text>
     <option key="A" correct="false">LUNs on the FC SAN storage</option>
     <option key="B" correct="false">File systems on the NAS</option>
     <option key="C" correct="false">Shard folders on Local disks</option>
     <option key="D" correct="true">None of the above</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image45.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="61" topic="VLAN" difficulty="Medium">
-    <text>Ina network, why do devices at botn ends of a Irunk link need to Identi#yVLANS!</text>
+  <question id="52" topic="VLAN" difficulty="Medium">
+    <text>Ina network, why do devices at both ends of a Trunk link need to identify VLANS?</text>
     <option key="A" correct="false">To ensure all frames are tagged</option>
     <option key="B" correct="false">To maintain physical network isolation</option>
     <option key="C" correct="false">To prevent data frame transmission</option>
     <option key="D" correct="true">To route frames to the correct VLANs</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image47.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="62" topic="Network" difficulty="Medium">
-    <text>Which type of link is used to connect switches or a switch to a router in a network? [&gt;</text>
+  <question id="53" topic="Network" difficulty="Medium">
+    <text>Which type of link is used to connect switches or a switch to a router in a network?</text>
     <option key="A" correct="true">Trunk link</option>
     <option key="B" correct="false">Tagged link</option>
     <option key="C" correct="false">Access link</option>
-    <option key="D" correct="false">VLANIink</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image49.png</explanation>
+    <option key="D" correct="false">VLAN Link</option>
+    <explanation></explanation>
   </question>
-  <question id="63" topic="Mixed" difficulty="Medium">
+  <question id="54" topic="Mixed" difficulty="Medium">
     <text>Which of the following is not correct?</text>
     <option key="A" correct="true">A data store can contain multiple stage devices.</option>
     <option key="B" correct="false">A data store indicates a manageable and operable logical storage unit.</option>
     <option key="C" correct="false">None of the above.</option>
     <option key="D" correct="false">A data store carries specific VM services, such as disk creation.</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image51.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="64" topic="Mixed" difficulty="Medium">
-    <text>Disk from common ners</text>
-    <option key="A" correct="true">can be used by only one VM.</option>
-    <option key="B" correct="false">can be used by multiple VMs.</option>
-    <option key="C" correct="false">cannot be used by any VM.</option>
-    <option key="D" correct="false">none of the above.</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image53.png (Correct option not detected.)</explanation>
-  </question>
-  <question id="65" topic="Mixed" difficulty="Medium">
+  <question id="56" topic="Mixed" difficulty="Medium">
     <text>Disk from common disk type</text>
     <option key="A" correct="true">can be used by only one VM.</option>
     <option key="B" correct="false">can be used by multiple VMs.</option>
     <option key="C" correct="false">cannot be used by any VM.</option>
     <option key="D" correct="false">none of the above.</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image54.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
   <question id="66" topic="Mixed" difficulty="Medium">
     <text>All of the following are storage units that can be encapsulated into data stores except Is</text>
