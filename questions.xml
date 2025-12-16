@@ -58,7 +58,7 @@
   </question>
   <question id="8" topic="Mixed" difficulty="Medium">
     <text>What does QoS stand for in the context of Cloud computing?</text>
-    <option key="A" correct="true">auality of Service</option>
+    <option key="A" correct="true">Qauality of Service</option>
     <option key="B" correct="false">Quota of Synchronization</option>
     <option key="C" correct="false">Quick Operation System</option>
     <option key="D" correct="false">Query of Snapshots</option>
@@ -114,10 +114,10 @@
   </question>
   <question id="15" topic="CPU" difficulty="Medium">
     <text>Which of the following obtains CPUs and memory resources from the host?</text>
-    <option key="A" correct="false">ve template.</option>
-    <option key="B" correct="false">Noneotthem.</option>
-    <option key="C" correct="true">vMand VM template.</option>
-    <option key="D" correct="false">w.</option>
+    <option key="A" correct="false">VM template.</option>
+    <option key="B" correct="false">None of them.</option>
+    <option key="C" correct="true">VM and VM template.</option>
+    <option key="D" correct="false">VM.</option>
     <explanation>Extracted from: mid-2.pdf page 15</explanation>
   </question>
   <question id="16" topic="VLAN" difficulty="Medium">
