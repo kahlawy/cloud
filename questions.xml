@@ -102,7 +102,7 @@
     <option key="B" correct="false">Shared directory.</option>
     <option key="C" correct="true">Logical unit number (LUN).</option>
     <option key="D" correct="false">None of the above.</option>
-    <explanation</explanation>
+    <explanation></explanation>
   </question>
   <question id="15" topic="CPU" difficulty="Medium">
     <text>Which of the following obtains CPUs and memory resources from the host?</text>
@@ -182,7 +182,7 @@
     <option key="B" correct="true">They communicate through physical switches</option>
     <option key="C" correct="false">They communicate directly without using physical switches</option>
     <option key="D" correct="false">They require a dedicated VLAN for communication</option>
-    <explanation>/explanation>
+    <explanation></explanation>
   </question>
   <question id="25" topic="VLAN" difficulty="Medium">
     <text>Uplinks in VLAN are used to connect</text>
@@ -254,7 +254,7 @@
     <option key="B" correct="false">There is no CPU constraint.</option>
     <option key="C" correct="false"> The VM CPU configuration must be higher than the CPU function set of the destination cluster.</option>
     <option key="D" correct="true"> The VM CPU configuration must be lower than the CPU function set of the destination cluster.</option>
-    <explanation>(Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
   <question id="34" topic="Mixed" difficulty="Medium">
     <text>Which of the following is not correct?</text>
