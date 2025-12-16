@@ -222,7 +222,7 @@
     <option key="B" correct="false">Physical server can be connected to multiple standard vSwitches.</option>
     <option key="C" correct="true">Standard vSwitches can be deployed across physical servers,</option>
     <option key="D" correct="false">DVS can be connected to multiple physical servers.</option>
-    <explanation>Extracted from: mid-2.pdf page 31</explanation>
+    <explanation></explanation>
   </question>
   <question id="30" topic="SAN" difficulty="Medium">
     <text>Which SAN architectureis established using the iSCSI protocol?</text>
@@ -238,127 +238,95 @@
     <option key="B" correct="false">Query of Snapshots</option>
     <option key="C" correct="false">Quick Operation System</option>
     <option key="D" correct="false">Quota of Synchronization</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image1.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="32" topic="Mixed" difficulty="Medium">
-    <text>What does Qos stand For In the context of Cloud computing?</text>
-    <option key="A" correct="true">Quality of Service</option>
-    <option key="B" correct="false">Query of Snapshots</option>
-    <option key="C" correct="false">Quick Operation System</option>
-    <option key="D" correct="false">Quota of Synchronization</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image2.png (Correct option not detected.)</explanation>
-  </question>
-  <question id="33" topic="VMs" difficulty="Medium">
-    <text> Which of tne rolowing methoas Is the most common method for creating VMS £</text>
-    <option key="A" correct="true">Clonea VMtoa VM.</option>
+  <question id="32" topic="VMs" difficulty="Medium">
+    <text> Which of the following methods is the most common method for creating VMS?</text>
+    <option key="A" correct="false">Clone a VM to a VM.</option>
     <option key="B" correct="false">Create a bare VM.</option>
-    <option key="C" correct="false">Create an using a VM template.</option>
+    <option key="C" correct="true">Create an using a VM template.</option>
     <option key="D" correct="false">Convert a VM template into a VM.</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image3.png</explanation>
+    <explanation></explanation>
   </question>
-  <question id="34" topic="Mixed" difficulty="Medium">
-    <text>ee eee eee eee NT INE NT AE EIN ANE EERIE ES Ne Incompatible Migration Cluster (IMC) function enabled,</text>
+  <question id="33" topic="Mixed" difficulty="Medium">
+    <text>IF a VM is migrated to a host in another cluster, and the destination cluster has the Incompatible Migration Cluster (IMC) function enabled.</text>
     <option key="A" correct="false">None of them.</option>
-    <option key="B" correct="false">there is no CPU constraint.</option>
+    <option key="B" correct="false">There is no CPU constraint.</option>
     <option key="C" correct="false"> The VM CPU configuration must be higher than the CPU function set of the destination cluster.</option>
     <option key="D" correct="true"> The VM CPU configuration must be lower than the CPU function set of the destination cluster.</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image5.png (Correct option not detected.)</explanation>
+    <explanation>(Correct option not detected.)</explanation>
   </question>
-  <question id="35" topic="Mixed" difficulty="Medium">
-    <text>WVITIGTT OT UTE TONOWITIY Io TOL COMEOLS</text>
+  <question id="34" topic="Mixed" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
     <option key="A" correct="false">The VM template is used S VMs in batches.</option>
     <option key="B" correct="false">AVM template is a copy of a VM containing an OS, applications, and VM specifications.</option>
     <option key="C" correct="false">VM template does not occupy host resources.</option>
     <option key="D" correct="true">VM template runs applications to process computing tasks.</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image7.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="36" topic="Mixed" difficulty="Medium">
-    <text>Widlls d TOotilGuorlrOr GHallyilly da Uala store IO a VIVI Te yal Illy sildreu Ulohs © I</text>
+  <question id="35" topic="Mixed" difficulty="Medium">
+    <text>What is a restriction for changing data for a VM regarding shared disks?</text>
     <option key="A" correct="true">Shared disks cannot be migrated</option>
     <option key="B" correct="false">Shared disks must be in a running state for migration</option>
     <option key="C" correct="false">Shared disks must be migrated individually</option>
     <option key="D" correct="false">Shared disks must be attached to VMs for successful migration</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image9.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="37" topic="VMs" difficulty="Medium">
-    <text>What is the significance of VMs being in the same port group on allferent hosts?</text>
+  <question id="36" topic="VMs" difficulty="Medium">
+    <text>What is the significance of VMs being in the same port group on different hosts?</text>
     <option key="A" correct="false">They communicate directly without using physical switches</option>
-    <option key="B" correct="true">They communicate through physical switches te _</option>
+    <option key="B" correct="true">They communicate through physical switches</option>
     <option key="C" correct="false">They require a dedicated VLAN for communication</option>
     <option key="D" correct="false">They cannot communicate with each other</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image11.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="38" topic="Mixed" difficulty="Medium">
-    <text>nn on on en on ee ee on oe ne EO IE OEE IE another data store?</text>
+  <question id="37" topic="Mixed" difficulty="Medium">
+    <text>Which of the following conditions are not required to migrate VM storage from data store to  another data store?</text>
     <option key="A" correct="false">The source and destination storage devices are associated with the same host.</option>
     <option key="B" correct="false">The destination data store has sufficient storage space.</option>
-    <option key="C" correct="true">Allofthem.</option>
-    <option key="D" correct="false">No graphics processing units (GPUs) are mounted to the VMs.</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image13.png</explanation>
+    <option key="C" correct="false">All of them.</option>
+    <option key="D" correct="true">No graphics processing units (GPUs) are mounted to the VMs.</option>
+    <explanation></explanation>
   </question>
-  <question id="39" topic="Mixed" difficulty="Medium">
-    <text>storage virtualization abstracts Tesources Qir....... INLO Gata Store</text>
-    <option key="A" correct="true">NAS</option>
-    <option key="B" correct="false">IPSAN</option>
-    <option key="C" correct="false">FCSAN</option>
-    <option key="D" correct="false">None of the above</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image15.png</explanation>
+  <question id="38" topic="Mixed" difficulty="Medium">
+    <text>storage virtualization abstracts resources in ....... into data Store</text>
+    <option key="A" correct="false">NAS</option>
+    <option key="B" correct="false">IP SAN</option>
+    <option key="C" correct="false">FC SAN</option>
+    <option key="D" correct="true">None of the above</option>
+    <explanation></explanation>
+  </question>
+  <question id="39" topic="VMs" difficulty="Medium">
+    <text>Three VMs (A, B, and C) run on a host that uses a single-core 2.8 GHz physical CPU. Their quotas are set to 1000, 2000, and 4000, respectively. The limit attribute of VM C is set to 1000 MHz. When the CPU workloads of the VMs are heavy, VM B can obtain a computing capability of:</text>
+    <option key="A" correct="true">None of them.</option>
+    <option key="B" correct="false">600 MHz.</option>
+    <option key="C" correct="false">1200 MHz.</option>
+    <option key="D" correct="false">1000 MHz.</option>
+    <explanation></explanation>
   </question>
   <question id="40" topic="Mixed" difficulty="Medium">
-    <text>TOW Manly Us Ilda VIVE IL TMds (WO Lilial COTS SOCKELS &amp;</text>
-    <option key="A" correct="true">Four</option>
-    <option key="B" correct="false">One</option>
-    <option key="C" correct="false">Three</option>
-    <option key="D" correct="false">Two</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image17.png (Correct option not detected.)</explanation>
-  </question>
-  <question id="41" topic="Mixed" difficulty="Medium">
-    <text>TTOW TNGHY WP Vo lia VINEE IE Tid LV) Lilidll GUTS SUURE LoS</text>
-    <option key="A" correct="true">eo) Four</option>
-    <option key="B" correct="false">One</option>
-    <option key="C" correct="false">Three</option>
-    <option key="D" correct="false">Two</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image18.png (Correct option not detected.)</explanation>
-  </question>
-  <question id="42" topic="VMs" difficulty="Medium">
-    <text>quotas are set to 1000, 2000, and 4000, respectively. The limit attribute of VM C is set to 1000 MHz.When thelepu workloads of the VMs are heavy, VM B can obtain a computing capability of</text>
-    <option key="A" correct="false">None of them.</option>
-    <option key="B" correct="true">600Mbz.</option>
-    <option key="C" correct="false">1200 MHz,</option>
-    <option key="D" correct="false">1000 MHz,</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image19.png</explanation>
-  </question>
-  <question id="43" topic="Mixed" difficulty="Medium">
     <text>Which of the following is not correct?</text>
     <option key="A" correct="false">Trunk link can connect switch to a router.</option>
     <option key="B" correct="true">Frames transmitted on the trunk link are untagged frames.</option>
     <option key="C" correct="false">Trunk link can connect switches.</option>
     <option key="D" correct="false">Trunk link can aid data from different VLANs.</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image23.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
-  <question id="44" topic="Mixed" difficulty="Medium">
-    <text>which of tne rovowing IS not correct?</text>
-    <option key="A" correct="true">Trunk link can connect switch to a router.</option>
-    <option key="B" correct="false">eo) Frames transmitted on the trunk link are untagged frames.</option>
-    <option key="C" correct="false">Trunk link can connect switches.</option>
-    <option key="D" correct="false">Trunk link can carry data from different VLANs.</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image24.png</explanation>
-  </question>
-  <question id="45" topic="VLAN" difficulty="Medium">
-    <text>EE AN ND ET EE RE EEE EE AED TR RE Ee ee eee is inconsistent with the default VLAN ID?</text>
-    <option key="A" correct="false">Nags the frame with the default VLAN ID</option>
+  <question id="41" topic="VLAN" difficulty="Medium">
+    <text>When an access port receives a frame with a tag, what action does it take if the frame VLAN ID is inconsistent with the default VLAN ID?</text>
+    <option key="A" correct="false">Tags the frame with the default VLAN ID</option>
     <option key="B" correct="false">Removes the PVID tag</option>
-    <option key="C" correct="false">Discards the frame</option>
-    <option key="D" correct="true">Transmits the frame without modifications</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image25.png (Correct option not detected.)</explanation>
+    <option key="C" correct="true">Discards the frame</option>
+    <option key="D" correct="false">Transmits the frame without modifications</option>
+    <explanation></explanation>
   </question>
-  <question id="46" topic="Mixed" difficulty="Medium">
+  <question id="42" topic="Mixed" difficulty="Medium">
     <text>Which type of frames are typically transmitted on an Access link?</text>
     <option key="A" correct="true">Untagged frames</option>
     <option key="B" correct="false">VLAN frames</option>
     <option key="C" correct="false">Tagged frames</option>
     <option key="D" correct="false">Broadcast frames</option>
-    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image27.png (Correct option not detected.)</explanation>
+    <explanation></explanation>
   </question>
   <question id="47" topic="SAN" difficulty="Medium">
     <text>Inthe singie-switcning MOGe OT Ir SAN NEtwWOrKing, WNal allows MUITIPle NOSTS TO snare ne same storage device? |)</text>
