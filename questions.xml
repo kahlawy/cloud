@@ -86,7 +86,7 @@
     <option key="B" correct="true">Shared disks cannot be migrated</option>
     <option key="C" correct="false">Shared disks must be in a running state for migration</option>
     <option key="D" correct="false">Shared disks must be migrated individually</option>
-    <explanation>Extracted from: mid-2.pdf page 12</explanation>
+    <explanation></explanation>
   </question>
   <question id="13" topic="Mixed" difficulty="Medium">
     <text>What does a large number of broadcast packets do to the network?</text>
@@ -110,7 +110,7 @@
     <option key="B" correct="false">None of them.</option>
     <option key="C" correct="true">VM and VM template.</option>
     <option key="D" correct="false">VM.</option>
-    <explanation>/explanation>
+    <explanation></explanation>
   </question>
   <question id="16" topic="VLAN" difficulty="Medium">
     <text>Why is itimportant for devices at both ends of a Trunk link to identify the VLAN of data frames?</text>
