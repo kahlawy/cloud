@@ -1,547 +1,547 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<?xml version='1.0' encoding='utf-8'?>
 <quiz>
-<question id="1" topic="SAN" difficulty="Medium">
-<text>In the single-switching mode of IP SAN networking, what allows multiple hosts to share the same storage device?</text>
-<option key="A" correct="false">SCSIHBA cards</option>
-<option key="B" correct="false">Direct connections</option>
-<option key="C" correct="true">Ethernet switch</option>
-<option key="D" correct="false">Ethernet cards</option>
-<explanation>Extracted from: mid-2.pdf page 1</explanation>
-</question>
-<question id="2" topic="Network" difficulty="Medium">
-<text>What is the layer of operation for a vSwitch?</text>
-<option key="A" correct="false">Layer</option>
-<option key="B" correct="false">Layer-3</option>
-<option key="C" correct="false">Layers</option>
-<option key="D" correct="true">Layer-2</option>
-<explanation>Extracted from: mid-2.pdf page 2</explanation>
-</question>
-<question id="3" topic="Mixed" difficulty="Medium">
-<text>Disk from common disk type</text>
-<option key="A" correct="false">none of the above,</option>
-<option key="B" correct="false">can be used by multiple VMs.</option>
-<option key="C" correct="true">can be used by only one VM.</option>
-<option key="D" correct="false">cannot be used by any VM.</option>
-<explanation>Extracted from: mid-2.pdf page 3</explanation>
-</question>
-<question id="4" topic="VMs" difficulty="Medium">
-<text>‘Three VMs (A, B, and C) run on ahost that uses a single-core 2.8 GHz physical CPU. Their quotas are set to 1000, 2000, and 4000, respectively. The reserved attribute of VM B is set to 900 MHzWhen the CPU workloads of the VMs are heavy, VM A. can obtain a computing capability of</text>
-<option key="A" correct="false">1520MHz</option>
-<option key="B" correct="false">900 MHz,</option>
-<option key="C" correct="true">None of them.</option>
-<option key="D" correct="false">380MHz.</option>
-<explanation>Extracted from: mid-2.pdf page 4</explanation>
-</question>
-<question id="5" topic="VMs" difficulty="Medium">
-<text>‘Three VMs (A, B, and C) run on ahost that uses a single-core 2.8 GHz physical CPU. Their quotas are set to 1000, 2000, and 4000, respectively. The reserved attribute of VM B is set to 900 MHzWhen the CPU workloads of the VMs are heavy, VM A. can obtain a computing capability of</text>
-<option key="A" correct="false">1520MHz</option>
-<option key="B" correct="false">900 MHz,</option>
-<option key="C" correct="true">Noneofthem.</option>
-<option key="D" correct="false">380MHz.</option>
-<explanation>Extracted from: mid-2.pdf page 5</explanation>
-</question>
-<question id="6" topic="Network" difficulty="Medium">
-<text>What is the primary function of a Trunk link when connecting switches in a network?</text>
-<option key="A" correct="false">Tocarry frames between routers</option>
-<option key="B" correct="false">Toimprove host-to-switch communication</option>
-<option key="C" correct="false">Tolimit the number of devices ona network</option>
-<option key="D" correct="true">Toconnect different VLANs</option>
-<explanation>Extracted from: mid-2.pdf page 6</explanation>
-</question>
-<question id="7" topic="Mixed" difficulty="Medium">
-<text>Which of the following is correct?</text>
-<option key="A" correct="false">Ahost GPU in virtualization mode can be bound to only one VM.</option>
-<option key="B" correct="true">Ahost GPU in passthrough mode can be bound to only one VM.</option>
-<option key="C" correct="false">Ahost GPU in vittualization mode cannot be bound to any VM.</option>
-<option key="D" correct="false">Ahost GPU in passthrough mode can be shared by multiple VMs.</option>
-<explanation>Extracted from: mid-2.pdf page 7</explanation>
-</question>
-<question id="8" topic="Mixed" difficulty="Medium">
-<text>What does QoS stand for in the context of Cloud computing?</text>
-<option key="A" correct="true">auality of Service</option>
-<option key="B" correct="false">Quota of Synchronization</option>
-<option key="C" correct="false">Quick Operation System</option>
-<option key="D" correct="false">Query of Snapshots</option>
-<explanation>Extracted from: mid-2.pdf page 8</explanation>
-</question>
-<question id="9" topic="Network" difficulty="Medium">
-<text>Which of the following does not use Ethernet switches?</text>
-<option key="A" correct="false">IPSAN</option>
-<option key="B" correct="true">FCsaN</option>
-<option key="C" correct="false">Fcoe</option>
-<option key="D" correct="false">None of the above.</option>
-<explanation>Extracted from: mid-2.pdf page 9</explanation>
-</question>
-<question id="10" topic="Mixed" difficulty="Medium">
-<text>Which of the following is not correct?</text>
-<option key="A" correct="false">The VLAN technology provides a management method ta control the communication between terminals.</option>
-<option key="B" correct="true">The VLAN technology divides users into multiple physical networks (groups).</option>
-<option key="C" correct="false">Users in different VLANs cannot communicate with each other.</option>
-<option key="D" correct="false">The virtual local area network (VLAN) can isolate broadcast domains.</option>
-<explanation>Extracted from: mid-2.pdf page 10</explanation>
-</question>
-<question id="11" topic="Mixed" difficulty="Medium">
-<text>In which communication mode does the source end send a query to all devices in the same broadcast domain before the target receiver replies in unicast made?</text>
-<option key="A" correct="true">Broadcast</option>
-<option key="B" correct="false">Duplex</option>
-<option key="C" correct="false">Multicast</option>
-<option key="D" correct="false">Unicast</option>
-<explanation>Extracted from: mid-2.pdf page 11</explanation>
-</question>
-<question id="12" topic="VMs" difficulty="Medium">
-<text>What is a restriction for changing a data store for a VM regarding shared disks?</text>
-<option key="A" correct="false">Shared disks must be attached to VMs for successful migration</option>
-<option key="B" correct="true">Shared disks cannot be migrated</option>
-<option key="C" correct="false">Shared disks must be in a running state for migration</option>
-<option key="D" correct="false">Shared disks must be migrated individually</option>
-<explanation>Extracted from: mid-2.pdf page 12</explanation>
-</question>
-<question id="13" topic="Mixed" difficulty="Medium">
-<text>What does a large number of broadcast packets do to the network?</text>
-<option key="A" correct="false">Enhances data transfer speed</option>
-<option key="B" correct="false">Improves network performance</option>
-<option key="C" correct="false">Reduces network congestion</option>
-<option key="D" correct="true">occupies bandwidth</option>
-<explanation>Extracted from: mid-2.pdf page 13</explanation>
-</question>
-<question id="14" topic="SAN" difficulty="Medium">
-<text>Which of the following is provided by FC SAN as a storage device</text>
-<option key="A" correct="false">Storage pool.</option>
-<option key="B" correct="false">Shared directory.</option>
-<option key="C" correct="true">Logical unit number LUN).</option>
-<option key="D" correct="false">None of the above.</option>
-<explanation>Extracted from: mid-2.pdf page 14</explanation>
-</question>
-<question id="15" topic="CPU" difficulty="Medium">
-<text>Which of the following obtains CPUs and memory resources from the host?</text>
-<option key="A" correct="false">ve template.</option>
-<option key="B" correct="false">Noneotthem.</option>
-<option key="C" correct="true">vMand VM template.</option>
-<option key="D" correct="false">w.</option>
-<explanation>Extracted from: mid-2.pdf page 15</explanation>
-</question>
-<question id="16" topic="VLAN" difficulty="Medium">
-<text>Why is itimportant for devices at both ends of a Trunk link to identify the VLAN of data frames?</text>
-<option key="A" correct="false">Host hardware cannot identity tagged frames</option>
-<option key="B" correct="true">Toensure proper routing of data frames</option>
-<option key="C" correct="false">Tereduce network congestion</option>
-<option key="D" correct="false">Toimprove network security</option>
-<explanation>Extracted from: mid-2.pdf page 17</explanation>
-</question>
-<question id="17" topic="Memory" difficulty="Medium">
-<text>How does Memory quota differ from Memory reservation?</text>
-<option key="A" correct="false">They are synonyms and can be used interchangeably</option>
-<option key="B" correct="false">Memory quota ensures a minimum allocation, while Memory reservation defines a proportion</option>
-<option key="C" correct="true">Memory reservation guarantees a minimurn allocation, while Memory quota defines a proportion</option>
-<option key="D" correct="false">Memory quota is for CPU resources, while Memary reservation is for memory</option>
-<explanation>Extracted from: mid-2.pdf page 18</explanation>
-</question>
-<question id="18" topic="VMs" difficulty="Medium">
-<text>Three VMs (A, B, and C) run on ahost that uses a single-core 2.8 GHz physical CPU. Their quotas are set to 1000, 2000, and 4000, respectively. The limit attribute of VM Cis set to 1000 MHz.When the CPU workloads of the VMs are heavy, VM B can obtain a computing capability of</text>
-<option key="A" correct="false">600 MHz.</option>
-<option key="B" correct="false">1000MHe</option>
-<option key="C" correct="true">1200 Mhz,</option>
-<option key="D" correct="false">Noneofthem.</option>
-<explanation>Extracted from: mid-2.pdf page 19</explanation>
-</question>
-<question id="19" topic="VMs" difficulty="Medium">
-<text>Three VMs (A, B, and C) run on ahost that uses a Dual-core 2.8 GHz physical CPU. Their quotas are set to 1000, 2000, and 1000, respectively. When the CPU workloads of the VMs are heavy, VM A can obtain a computing capabllity of</text>
-<option key="A" correct="false">1600MHz.</option>
-<option key="B" correct="true">soomne.</option>
-<option key="C" correct="false">None of them</option>
-<option key="D" correct="false">400 MHz.</option>
-<explanation>Extracted from: mid-2.pdf page 20</explanation>
-</question>
-<question id="20" topic="VLAN" difficulty="Medium">
-<text>What is the common characteristic of frames transmitted on an access linkin a VLAN?</text>
-<option key="A" correct="false">Tagged frames</option>
-<option key="B" correct="true">Broadcast frames</option>
-<option key="C" correct="false">Untayged frames</option>
-<option key="D" correct="false">Multicast trames</option>
-<explanation>Extracted from: mid-2.pdf page 21</explanation>
-</question>
-<question id="21" topic="VLAN" difficulty="Medium">
-<text>What is the common characteristic of frames transmitted on an access linkin a VLAN?</text>
-<option key="A" correct="false">Tagged frames</option>
-<option key="B" correct="false">Broadcast frames</option>
-<option key="C" correct="true">untagged frames</option>
-<option key="D" correct="false">Multicast frames</option>
-<explanation>Extracted from: mid-2.pdf page 22</explanation>
-</question>
-<question id="22" topic="Mixed" difficulty="Medium">
-<text>In the context of Layer 2 broadcasts, what happens when users aren the same broadcast domain?</text>
-<option key="A" correct="false">Banawidth is optimized</option>
-<option key="B" correct="true">Broadcast storm can occur</option>
-<option key="C" correct="false">Information is securely encrypted</option>
-<option key="D" correct="false">Broadcasts are isolated</option>
-<explanation>Extracted from: mid-2.pdf page 23</explanation>
-</question>
-<question id="23" topic="VMs" difficulty="Medium">
-<text>Which network component is responsible for connecting VMs to external networks?</text>
-<option key="A" correct="false">Physical switch</option>
-<option key="B" correct="true">ne</option>
-<option key="C" correct="false">vswitcn</option>
-<option key="D" correct="false">Port group</option>
-<explanation>Extracted from: mid-2.pdf page 24</explanation>
-</question>
-<question id="24" topic="VMs" difficulty="Medium">
-<text>What is the significance of VMs being in the same port group on different hosts?</text>
-<option key="A" correct="false">They cannot communicate with each other</option>
-<option key="B" correct="true">They communicate through physical switches</option>
-<option key="C" correct="false">They communicate directly without using physical switches</option>
-<option key="D" correct="false">They require a dedicated VLAN for communication</option>
-<explanation>Extracted from: mid-2.pdf page 25</explanation>
-</question>
-<question id="25" topic="VLAN" difficulty="Medium">
-<text>Uplinks in VLAN is used to connect</text>
-<option key="A" correct="false">Switch to switch</option>
-<option key="B" correct="false">host to switch.</option>
-<option key="C" correct="true">dvs to physical NIC</option>
-<option key="D" correct="false">Noneofthem.</option>
-<explanation>Extracted from: mid-2.pdf page 26</explanation>
-</question>
-<question id="26" topic="Mixed" difficulty="Medium">
-<text>Storage virtualization abstracts resources on... into data store</text>
-<option key="A" correct="true">FCSAN</option>
-<option key="B" correct="false">None ot the above</option>
-<option key="C" correct="false">IPsan</option>
-<option key="D" correct="false">nas</option>
-<explanation>Extracted from: mid-2.pdf page 27</explanation>
-</question>
-<question id="27" topic="Mixed" difficulty="Medium">
-<text>What does the source end not know in the Broadcast communication mode?</text>
-<option key="A" correct="false">Devices in the same broadcast domain</option>
-<option key="B" correct="true">Receivers address</option>
-<option key="C" correct="false">Path between the receiver and suurce end</option>
-<option key="D" correct="false">Query from other devices</option>
-<explanation>Extracted from: mid-2.pdf page 28</explanation>
-</question>
-<question id="28" topic="SAN" difficulty="Medium">
-<text>Storage resource types can be classified into three categories DAS, NAS, SAN. DAS stands for...</text>
-<option key="A" correct="true">Direct Attached Storage</option>
-<option key="B" correct="false">Dynamic Attached Storage</option>
-<option key="C" correct="false">Distributed Attached Storage</option>
-<option key="D" correct="false">None of the above.</option>
-<explanation>Extracted from: mid-2.pdf page 29 | mid-2.pdf page 30</explanation>
-</question>
-<question id="29" topic="Mixed" difficulty="Medium">
-<text>Which of the following is not correct?</text>
-<option key="A" correct="false">Physical server can be connected to multiple DVS.</option>
-<option key="B" correct="false">Physical server can be connected to multiple standard vSwitches.</option>
-<option key="C" correct="true">Standard vSwitches can be deployed across physical servers,</option>
-<option key="D" correct="false">DVS can be connected to multiple physical servers.</option>
-<explanation>Extracted from: mid-2.pdf page 31</explanation>
-</question>
-<question id="30" topic="SAN" difficulty="Medium">
-<text>Which SAN architectureis established using the iSCSI protocol?</text>
-<option key="A" correct="false">iscsisan</option>
-<option key="B" correct="true">FCoESAN</option>
-<option key="C" correct="false">iPsan</option>
-<option key="D" correct="false">FCSAN</option>
-<explanation>Extracted from: mid-2.pdf page 32</explanation>
-</question>
-<question id="31" topic="Mixed" difficulty="Medium">
-<text>What does QoS stand for in the context of Cloud computing? I</text>
-<option key="A" correct="true">Quality of Service</option>
-<option key="B" correct="false">Query of Snapshots</option>
-<option key="C" correct="false">Quick Operation System</option>
-<option key="D" correct="false">Quota of Synchronization</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image1.png (Correct option not detected.)</explanation>
-</question>
-<question id="32" topic="Mixed" difficulty="Medium">
-<text>What aoes Qos stand Tor In the context of Cloud computing?</text>
-<option key="A" correct="false">eo) Quality of Service</option>
-<option key="B" correct="false">Query of Snapshots</option>
-<option key="C" correct="false">Quick Operation System</option>
-<option key="D" correct="false">Quota of Synchronization</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image2.png (Correct option not detected.)</explanation>
-</question>
-<question id="33" topic="VMs" difficulty="Medium">
-<text>which of tne rolowing methoas Is the most common method Tor creating VMS £</text>
-<option key="A" correct="true">Clonea VMtoa VM.</option>
-<option key="B" correct="false">Create a bare VM.</option>
-<option key="C" correct="false">Create an using a VM template.</option>
-<option key="D" correct="false">Convert a VM template into a VM.</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image3.png</explanation>
-</question>
-<question id="34" topic="Mixed" difficulty="Medium">
-<text>ee eee eee eee NT INE NT AE EIN ANE EERIE ES Ne Incompatible Migration Cluster (IMC) function enabled,</text>
-<option key="A" correct="false">None of them.</option>
-<option key="B" correct="false">there is no CPU constraint.</option>
-<option key="C" correct="false">the VM CPU configuration must be higher than the CPU function set of the destination cluster.</option>
-<option key="D" correct="false">the VM CPU configuration must be lower than the CPU function set of the destination cluster.</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image5.png (Correct option not detected.)</explanation>
-</question>
-<question id="35" topic="Mixed" difficulty="Medium">
-<text>WVITIGTT OT UTE TONOWITIY Io TOL COMEOLS</text>
-<option key="A" correct="false">The VM template is used S VMs in batches.</option>
-<option key="B" correct="false">AVM template is a copy of a VM containing an OS, applications, and VM specifications.</option>
-<option key="C" correct="false">VM template does not occupy host resources.</option>
-<option key="D" correct="false">VM template runs applications to process computing tasks.</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image7.png (Correct option not detected.)</explanation>
-</question>
-<question id="36" topic="Mixed" difficulty="Medium">
-<text>Widlls d TOotilGuorlrOr GHallyilly da Uala store IO a VIVI Te yal Illy sildreu Ulohs © I</text>
-<option key="A" correct="false">Shared disks cannot be migrated</option>
-<option key="B" correct="false">Shared disks must be in a running state for migration</option>
-<option key="C" correct="false">Shared disks must be migrated individually</option>
-<option key="D" correct="false">Shared disks must be attached to VMs for successful migration</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image9.png (Correct option not detected.)</explanation>
-</question>
-<question id="37" topic="VMs" difficulty="Medium">
-<text>What is the significance of VMs being In the same port group on allferent hosts?</text>
-<option key="A" correct="false">They communicate directly without using physical switches</option>
-<option key="B" correct="false">They communicate through physical switches te _</option>
-<option key="C" correct="false">They require a dedicated VLAN for communication</option>
-<option key="D" correct="false">They cannot communicate with each other</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image11.png (Correct option not detected.)</explanation>
-</question>
-<question id="38" topic="Mixed" difficulty="Medium">
-<text>nn on on en on ee ee on oe ne EO IE OEE IE another data store?</text>
-<option key="A" correct="false">The source and destination storage devices are associated with the same host.</option>
-<option key="B" correct="false">The destination data store has sufficient storage space.</option>
-<option key="C" correct="true">Allofthem.</option>
-<option key="D" correct="false">No graphics processing units (GPUs) are mounted to the VMs.</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image13.png</explanation>
-</question>
-<question id="39" topic="Mixed" difficulty="Medium">
-<text>storage virtualization abstracts Tesources Qir....... INLO Gata Store</text>
-<option key="A" correct="true">NAS</option>
-<option key="B" correct="false">IPSAN</option>
-<option key="C" correct="false">FCSAN</option>
-<option key="D" correct="false">None of the above</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image15.png</explanation>
-</question>
-<question id="40" topic="Mixed" difficulty="Medium">
-<text>TOW Manly Us Ilda VIVE IL TMds (WO Lilial COTS SOCKELS &</text>
-<option key="A" correct="false">Four</option>
-<option key="B" correct="false">One</option>
-<option key="C" correct="false">Three</option>
-<option key="D" correct="false">Two</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image17.png (Correct option not detected.)</explanation>
-</question>
-<question id="41" topic="Mixed" difficulty="Medium">
-<text>TTOW TNGHY WP Vo lia VINEE IE Tid LV) Lilidll GUTS SUURE LoS</text>
-<option key="A" correct="false">eo) Four</option>
-<option key="B" correct="false">One</option>
-<option key="C" correct="false">Three</option>
-<option key="D" correct="false">Two</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image18.png (Correct option not detected.)</explanation>
-</question>
-<question id="42" topic="VMs" difficulty="Medium">
-<text>quotas are set to 1000, 2000, and 4000, respectively. The limit attribute of VM C is set to 1000 MHz.When thelepu workloads of the VMs are heavy, VM B can obtain a computing capability of</text>
-<option key="A" correct="false">None of them.</option>
-<option key="B" correct="true">600Mbz.</option>
-<option key="C" correct="false">1200 MHz,</option>
-<option key="D" correct="false">1000 MHz,</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image19.png</explanation>
-</question>
-<question id="43" topic="Mixed" difficulty="Medium">
-<text>Which of the following is not correct?</text>
-<option key="A" correct="false">Trunk link can connect switch to a router.</option>
-<option key="B" correct="true">Frames transmitted on the trunk link are untagged frames.</option>
-<option key="C" correct="false">Trunk link can connect switches.</option>
-<option key="D" correct="false">Trunk link can aid data from different VLANs.</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image23.png (Correct option not detected.)</explanation>
-</question>
-<question id="44" topic="Mixed" difficulty="Medium">
-<text>which of tne rovowing IS not correct?</text>
-<option key="A" correct="true">Trunk link can connect switch to a router.</option>
-<option key="B" correct="false">eo) Frames transmitted on the trunk link are untagged frames.</option>
-<option key="C" correct="false">Trunk link can connect switches.</option>
-<option key="D" correct="false">Trunk link can carry data from different VLANs.</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image24.png</explanation>
-</question>
-<question id="45" topic="VLAN" difficulty="Medium">
-<text>EE AN ND ET EE RE EEE EE AED TR RE Ee ee eee is inconsistent with the default VLAN ID?</text>
-<option key="A" correct="false">Nags the frame with the default VLAN ID</option>
-<option key="B" correct="false">Removes the PVID tag</option>
-<option key="C" correct="false">Discards the frame</option>
-<option key="D" correct="false">Transmits the frame without modifications</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image25.png (Correct option not detected.)</explanation>
-</question>
-<question id="46" topic="Mixed" difficulty="Medium">
-<text>Which type of frames are typically transmitted on an Access link?</text>
-<option key="A" correct="false">Untagged frames</option>
-<option key="B" correct="false">VLAN frames</option>
-<option key="C" correct="false">Tagged frames</option>
-<option key="D" correct="false">Broadcast frames</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image27.png (Correct option not detected.)</explanation>
-</question>
-<question id="47" topic="SAN" difficulty="Medium">
-<text>Inthe singie-switcning MOGe OT Ir SAN NEtwWOrKing, WNal allows MUITIPle NOSTS TO snare ne same storage device? |)</text>
-<option key="A" correct="false">Direct connections</option>
-<option key="B" correct="false">Ethernet cards</option>
-<option key="C" correct="false">Ethernet switch</option>
-<option key="D" correct="true">iSCSI HBA cards</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image29.png</explanation>
-</question>
-<question id="48" topic="Mixed" difficulty="Medium">
-<text>TEC LETS SITIO OMVICMT ETS SPIRIT TE SPIN PIS EUV E ANI ge WUTC CAPS PETES PIO LS A SHIGIe Lie same storage device?</text>
-<option key="A" correct="false">Direct connections</option>
-<option key="B" correct="false">Ethernet cards</option>
-<option key="C" correct="true">Ethernet switch</option>
-<option key="D" correct="false">iscsi HBA cards</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image30.png</explanation>
-</question>
-<question id="49" topic="Mixed" difficulty="Medium">
-<text>Wnat Goes a router use Tor Torwaraing data packets’ I</text>
-<option key="A" correct="false">Ethernet MAC addresses</option>
-<option key="B" correct="false">SDH ports</option>
-<option key="C" correct="false">Link layer protocols</option>
-<option key="D" correct="false">IP addresses</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image31.png (Correct option not detected.)</explanation>
-</question>
-<question id="50" topic="Mixed" difficulty="Medium">
-<text>What does a router use for forwarding data packets?</text>
-<option key="A" correct="false">Ethernet MAC addresses</option>
-<option key="B" correct="false">SDH ports</option>
-<option key="C" correct="true">Link layer protocols</option>
-<option key="D" correct="false">eo) IP addresses</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image32.png</explanation>
-</question>
-<question id="51" topic="Mixed" difficulty="Medium">
-<text>What is the primary action of an access port when receiving a trame without a tag?</text>
-<option key="A" correct="false">Removes the PVID tag</option>
-<option key="B" correct="false">Transmits the frame without modifications</option>
-<option key="C" correct="false">Discards the frame</option>
-<option key="D" correct="false">Tags the frame a the default VLAN ID</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image33.png (Correct option not detected.)</explanation>
-</question>
-<question id="52" topic="Mixed" difficulty="Medium">
-<text>What is the primary action of an access port when receiving a frame without a tag?</text>
-<option key="A" correct="false">Removes the PVID tag</option>
-<option key="B" correct="false">Transmits the frame without modifications</option>
-<option key="C" correct="true">Discards the frame fe) Tags the frame with the default VLAN ID</option>
-<option key="D" correct="false">Qubmit ancwer )</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image34.png</explanation>
-</question>
-<question id="53" topic="Mixed" difficulty="Medium">
-<text>Meee eee ee eee oe es ene TN I EA FN ATT NR ETRE CUTE broadcast domain before the target receiver replies in unicast mode?</text>
-<option key="A" correct="true">Multicast</option>
-<option key="B" correct="false">Broadcast</option>
-<option key="C" correct="false">Duplex</option>
-<option key="D" correct="false">Unicast</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image35.png</explanation>
-</question>
-<question id="54" topic="Mixed" difficulty="Medium">
-<text>What does the term port group refer to In the context of vowitcnes?</text>
-<option key="A" correct="false">Agroup of physical switch ports</option>
-<option key="B" correct="false">A network interface card (NIC) b</option>
-<option key="C" correct="false">Acollection of VMs on the same host</option>
-<option key="D" correct="false">A group of virtual switch ports</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image37.png (Correct option not detected.)</explanation>
-</question>
-<question id="55" topic="VLAN" difficulty="Medium">
-<text>Which link type is more likely to be used for interconnecting vswitches within the same VLAN?</text>
-<option key="A" correct="true">Trunk link</option>
-<option key="B" correct="false">Router link</option>
-<option key="C" correct="false">uplink cy)</option>
-<option key="D" correct="false">Access link</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image39.png</explanation>
-</question>
-<question id="56" topic="Mixed" difficulty="Medium">
-<text>In a network, wnat Is the primary purpose of tagging frames on a [runk link?</text>
-<option key="A" correct="false">To differentiate between VLANs</option>
-<option key="B" correct="false">To filter broadcast traffic</option>
-<option key="C" correct="false">To eens the switch's IP address</option>
-<option key="D" correct="false">To enhance network performance</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image41.png (Correct option not detected.)</explanation>
-</question>
-<question id="57" topic="Mixed" difficulty="Medium">
-<text>In a network, what Is the primary purpose of tagging frames ona Trunk link?</text>
-<option key="A" correct="false">To differentiate between VLANs</option>
-<option key="B" correct="false">To filter broadcast traffic</option>
-<option key="C" correct="false">Tanfentty the switch's IP address</option>
-<option key="D" correct="false">To enhance network performance</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image42.png (Correct option not detected.)</explanation>
-</question>
-<question id="58" topic="Mixed" difficulty="Medium">
-<text>All of the following are storage units that can bg encapsulated into data stores except</text>
-<option key="A" correct="false">Local disks on hosts</option>
-<option key="B" correct="false">Storage pools on FusionStorage</option>
-<option key="C" correct="false">None of the above</option>
-<option key="D" correct="false">Local memory on hosts</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image43.png (Correct option not detected.)</explanation>
-</question>
-<question id="59" topic="Mixed" difficulty="Medium">
-<text>All of the following are storage units that can be encapsulated into data stores except</text>
-<option key="A" correct="false">Local disks on hosts</option>
-<option key="B" correct="false">Storage poolon FusionStorage</option>
-<option key="C" correct="false">None of the above</option>
-<option key="D" correct="false">Local memory on hosts</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image44.png (Correct option not detected.)</explanation>
-</question>
-<question id="60" topic="Mixed" difficulty="Medium">
-<text>All of the following are storage units thatcan be encapsulated into data stores except</text>
-<option key="A" correct="false">LUNs on the FC SAN storage</option>
-<option key="B" correct="false">File systems on the NAS</option>
-<option key="C" correct="false">Shard folders on Local disks</option>
-<option key="D" correct="false">None of the above</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image45.png (Correct option not detected.)</explanation>
-</question>
-<question id="61" topic="VLAN" difficulty="Medium">
-<text>Ina network, why do devices at botn ends of a Irunk link need to Identi#yVLANS!</text>
-<option key="A" correct="false">To ensure all frames are tagged</option>
-<option key="B" correct="false">To maintain physical network isolation</option>
-<option key="C" correct="false">To prevent data frame transmission</option>
-<option key="D" correct="false">To route frames to the correct VLANs</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image47.png (Correct option not detected.)</explanation>
-</question>
-<question id="62" topic="Network" difficulty="Medium">
-<text>Which type of link is used to connect switches or a switch to a router in a network? [></text>
-<option key="A" correct="true">Trunk link</option>
-<option key="B" correct="false">Tagged link</option>
-<option key="C" correct="false">Access link</option>
-<option key="D" correct="false">VLANIink</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image49.png</explanation>
-</question>
-<question id="63" topic="Mixed" difficulty="Medium">
-<text>Which of the following is not correct?</text>
-<option key="A" correct="false">A data store can contain multiple stage devices.</option>
-<option key="B" correct="false">A data store indicates a manageable and operable logical storage unit.</option>
-<option key="C" correct="false">None of the above.</option>
-<option key="D" correct="false">A data store carries specific VM services, such as disk creation.</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image51.png (Correct option not detected.)</explanation>
-</question>
-<question id="64" topic="Mixed" difficulty="Medium">
-<text>Disk from common ners</text>
-<option key="A" correct="false">can be used by only one VM.</option>
-<option key="B" correct="false">can be used by multiple VMs.</option>
-<option key="C" correct="false">cannot be used by any VM.</option>
-<option key="D" correct="false">none of the above.</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image53.png (Correct option not detected.)</explanation>
-</question>
-<question id="65" topic="Mixed" difficulty="Medium">
-<text>Disk from common disk type</text>
-<option key="A" correct="true">can be used by only one VM.</option>
-<option key="B" correct="false">can be used by multiple VMs.</option>
-<option key="C" correct="false">cannot be used by any VM.</option>
-<option key="D" correct="false">none of the above.</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image54.png (Correct option not detected.)</explanation>
-</question>
-<question id="66" topic="Mixed" difficulty="Medium">
-<text>All of the following are storage units that can be encapsulated into data stores except Is</text>
-<option key="A" correct="false">None of the above</option>
-<option key="B" correct="false">File systems on the NAS</option>
-<option key="C" correct="true">LUNs on theiScsi</option>
-<option key="D" correct="false">Local disks on hosts</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image57.png</explanation>
-</question>
-<question id="67" topic="Mixed" difficulty="Medium">
-<text>What is one of theproblems caused by Layer 2 broadcasts?</text>
-<option key="A" correct="false">Reduced information security</option>
-<option key="B" correct="false">Reduced network latency</option>
-<option key="C" correct="false">Improved information security</option>
-<option key="D" correct="false">Enhanced network performance</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image59.png (Correct option not detected.)</explanation>
-</question>
-<question id="68" topic="Mixed" difficulty="Medium">
-<text>what Is one of the problems caused by Layer 2 broadcasts ¢</text>
-<option key="A" correct="false">Reduced information security —_—_—_</option>
-<option key="B" correct="false">Reduced network latency</option>
-<option key="C" correct="false">Improved information gacurity</option>
-<option key="D" correct="false">Enhanced network performance</option>
-<explanation>Extracted from: Quiz 02 - Real.docx word/media/image60.png (Correct option not detected.)</explanation>
-</question>
+  <question id="1" topic="SAN" difficulty="Medium">
+    <text>In the single-switching mode of IP SAN networking, what allows multiple hosts to share the same storage device?</text>
+    <option key="A" correct="false">SCSIHBA cards</option>
+    <option key="B" correct="false">Direct connections</option>
+    <option key="C" correct="true">Ethernet switch</option>
+    <option key="D" correct="false">Ethernet cards</option>
+    <explanation>Extracted from: mid-2.pdf page 1</explanation>
+  </question>
+  <question id="2" topic="Network" difficulty="Medium">
+    <text>What is the layer of operation for a vSwitch?</text>
+    <option key="A" correct="false">Layer</option>
+    <option key="B" correct="false">Layer-3</option>
+    <option key="C" correct="false">Layers</option>
+    <option key="D" correct="true">Layer-2</option>
+    <explanation>Extracted from: mid-2.pdf page 2</explanation>
+  </question>
+  <question id="3" topic="Mixed" difficulty="Medium">
+    <text>Disk from common disk type</text>
+    <option key="A" correct="false">none of the above,</option>
+    <option key="B" correct="false">can be used by multiple VMs.</option>
+    <option key="C" correct="true">can be used by only one VM.</option>
+    <option key="D" correct="false">cannot be used by any VM.</option>
+    <explanation>Extracted from: mid-2.pdf page 3</explanation>
+  </question>
+  <question id="4" topic="VMs" difficulty="Medium">
+    <text>‘Three VMs (A, B, and C) run on ahost that uses a single-core 2.8 GHz physical CPU. Their quotas are set to 1000, 2000, and 4000, respectively. The reserved attribute of VM B is set to 900 MHzWhen the CPU workloads of the VMs are heavy, VM A. can obtain a computing capability of</text>
+    <option key="A" correct="false">1520MHz</option>
+    <option key="B" correct="false">900 MHz,</option>
+    <option key="C" correct="true">None of them.</option>
+    <option key="D" correct="false">380MHz.</option>
+    <explanation>Extracted from: mid-2.pdf page 4</explanation>
+  </question>
+  <question id="5" topic="VMs" difficulty="Medium">
+    <text>‘Three VMs (A, B, and C) run on ahost that uses a single-core 2.8 GHz physical CPU. Their quotas are set to 1000, 2000, and 4000, respectively. The reserved attribute of VM B is set to 900 MHzWhen the CPU workloads of the VMs are heavy, VM A. can obtain a computing capability of</text>
+    <option key="A" correct="false">1520MHz</option>
+    <option key="B" correct="false">900 MHz,</option>
+    <option key="C" correct="true">Noneofthem.</option>
+    <option key="D" correct="false">380MHz.</option>
+    <explanation>Extracted from: mid-2.pdf page 5</explanation>
+  </question>
+  <question id="6" topic="Network" difficulty="Medium">
+    <text>What is the primary function of a Trunk link when connecting switches in a network?</text>
+    <option key="A" correct="false">Tocarry frames between routers</option>
+    <option key="B" correct="false">Toimprove host-to-switch communication</option>
+    <option key="C" correct="false">Tolimit the number of devices ona network</option>
+    <option key="D" correct="true">Toconnect different VLANs</option>
+    <explanation>Extracted from: mid-2.pdf page 6</explanation>
+  </question>
+  <question id="7" topic="Mixed" difficulty="Medium">
+    <text>Which of the following is correct?</text>
+    <option key="A" correct="false">Ahost GPU in virtualization mode can be bound to only one VM.</option>
+    <option key="B" correct="true">Ahost GPU in passthrough mode can be bound to only one VM.</option>
+    <option key="C" correct="false">Ahost GPU in vittualization mode cannot be bound to any VM.</option>
+    <option key="D" correct="false">Ahost GPU in passthrough mode can be shared by multiple VMs.</option>
+    <explanation>Extracted from: mid-2.pdf page 7</explanation>
+  </question>
+  <question id="8" topic="Mixed" difficulty="Medium">
+    <text>What does QoS stand for in the context of Cloud computing?</text>
+    <option key="A" correct="true">auality of Service</option>
+    <option key="B" correct="false">Quota of Synchronization</option>
+    <option key="C" correct="false">Quick Operation System</option>
+    <option key="D" correct="false">Query of Snapshots</option>
+    <explanation>Extracted from: mid-2.pdf page 8</explanation>
+  </question>
+  <question id="9" topic="Network" difficulty="Medium">
+    <text>Which of the following does not use Ethernet switches?</text>
+    <option key="A" correct="false">IPSAN</option>
+    <option key="B" correct="true">FCsaN</option>
+    <option key="C" correct="false">Fcoe</option>
+    <option key="D" correct="false">None of the above.</option>
+    <explanation>Extracted from: mid-2.pdf page 9</explanation>
+  </question>
+  <question id="10" topic="Mixed" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
+    <option key="A" correct="false">The VLAN technology provides a management method ta control the communication between terminals.</option>
+    <option key="B" correct="true">The VLAN technology divides users into multiple physical networks (groups).</option>
+    <option key="C" correct="false">Users in different VLANs cannot communicate with each other.</option>
+    <option key="D" correct="false">The virtual local area network (VLAN) can isolate broadcast domains.</option>
+    <explanation>Extracted from: mid-2.pdf page 10</explanation>
+  </question>
+  <question id="11" topic="Mixed" difficulty="Medium">
+    <text>In which communication mode does the source end send a query to all devices in the same broadcast domain before the target receiver replies in unicast made?</text>
+    <option key="A" correct="true">Broadcast</option>
+    <option key="B" correct="false">Duplex</option>
+    <option key="C" correct="false">Multicast</option>
+    <option key="D" correct="false">Unicast</option>
+    <explanation>Extracted from: mid-2.pdf page 11</explanation>
+  </question>
+  <question id="12" topic="VMs" difficulty="Medium">
+    <text>What is a restriction for changing a data store for a VM regarding shared disks?</text>
+    <option key="A" correct="false">Shared disks must be attached to VMs for successful migration</option>
+    <option key="B" correct="true">Shared disks cannot be migrated</option>
+    <option key="C" correct="false">Shared disks must be in a running state for migration</option>
+    <option key="D" correct="false">Shared disks must be migrated individually</option>
+    <explanation>Extracted from: mid-2.pdf page 12</explanation>
+  </question>
+  <question id="13" topic="Mixed" difficulty="Medium">
+    <text>What does a large number of broadcast packets do to the network?</text>
+    <option key="A" correct="false">Enhances data transfer speed</option>
+    <option key="B" correct="false">Improves network performance</option>
+    <option key="C" correct="false">Reduces network congestion</option>
+    <option key="D" correct="true">occupies bandwidth</option>
+    <explanation>Extracted from: mid-2.pdf page 13</explanation>
+  </question>
+  <question id="14" topic="SAN" difficulty="Medium">
+    <text>Which of the following is provided by FC SAN as a storage device</text>
+    <option key="A" correct="false">Storage pool.</option>
+    <option key="B" correct="false">Shared directory.</option>
+    <option key="C" correct="true">Logical unit number LUN).</option>
+    <option key="D" correct="false">None of the above.</option>
+    <explanation>Extracted from: mid-2.pdf page 14</explanation>
+  </question>
+  <question id="15" topic="CPU" difficulty="Medium">
+    <text>Which of the following obtains CPUs and memory resources from the host?</text>
+    <option key="A" correct="false">ve template.</option>
+    <option key="B" correct="false">Noneotthem.</option>
+    <option key="C" correct="true">vMand VM template.</option>
+    <option key="D" correct="false">w.</option>
+    <explanation>Extracted from: mid-2.pdf page 15</explanation>
+  </question>
+  <question id="16" topic="VLAN" difficulty="Medium">
+    <text>Why is itimportant for devices at both ends of a Trunk link to identify the VLAN of data frames?</text>
+    <option key="A" correct="false">Host hardware cannot identity tagged frames</option>
+    <option key="B" correct="true">Toensure proper routing of data frames</option>
+    <option key="C" correct="false">Tereduce network congestion</option>
+    <option key="D" correct="false">Toimprove network security</option>
+    <explanation>Extracted from: mid-2.pdf page 17</explanation>
+  </question>
+  <question id="17" topic="Memory" difficulty="Medium">
+    <text>How does Memory quota differ from Memory reservation?</text>
+    <option key="A" correct="false">They are synonyms and can be used interchangeably</option>
+    <option key="B" correct="false">Memory quota ensures a minimum allocation, while Memory reservation defines a proportion</option>
+    <option key="C" correct="true">Memory reservation guarantees a minimurn allocation, while Memory quota defines a proportion</option>
+    <option key="D" correct="false">Memory quota is for CPU resources, while Memary reservation is for memory</option>
+    <explanation>Extracted from: mid-2.pdf page 18</explanation>
+  </question>
+  <question id="18" topic="VMs" difficulty="Medium">
+    <text>Three VMs (A, B, and C) run on ahost that uses a single-core 2.8 GHz physical CPU. Their quotas are set to 1000, 2000, and 4000, respectively. The limit attribute of VM Cis set to 1000 MHz.When the CPU workloads of the VMs are heavy, VM B can obtain a computing capability of</text>
+    <option key="A" correct="false">600 MHz.</option>
+    <option key="B" correct="false">1000MHe</option>
+    <option key="C" correct="true">1200 Mhz,</option>
+    <option key="D" correct="false">Noneofthem.</option>
+    <explanation>Extracted from: mid-2.pdf page 19</explanation>
+  </question>
+  <question id="19" topic="VMs" difficulty="Medium">
+    <text>Three VMs (A, B, and C) run on ahost that uses a Dual-core 2.8 GHz physical CPU. Their quotas are set to 1000, 2000, and 1000, respectively. When the CPU workloads of the VMs are heavy, VM A can obtain a computing capabllity of</text>
+    <option key="A" correct="false">1600MHz.</option>
+    <option key="B" correct="true">soomne.</option>
+    <option key="C" correct="false">None of them</option>
+    <option key="D" correct="false">400 MHz.</option>
+    <explanation>Extracted from: mid-2.pdf page 20</explanation>
+  </question>
+  <question id="20" topic="VLAN" difficulty="Medium">
+    <text>What is the common characteristic of frames transmitted on an access linkin a VLAN?</text>
+    <option key="A" correct="false">Tagged frames</option>
+    <option key="B" correct="true">Broadcast frames</option>
+    <option key="C" correct="false">Untayged frames</option>
+    <option key="D" correct="false">Multicast trames</option>
+    <explanation>Extracted from: mid-2.pdf page 21</explanation>
+  </question>
+  <question id="21" topic="VLAN" difficulty="Medium">
+    <text>What is the common characteristic of frames transmitted on an access linkin a VLAN?</text>
+    <option key="A" correct="false">Tagged frames</option>
+    <option key="B" correct="false">Broadcast frames</option>
+    <option key="C" correct="true">untagged frames</option>
+    <option key="D" correct="false">Multicast frames</option>
+    <explanation>Extracted from: mid-2.pdf page 22</explanation>
+  </question>
+  <question id="22" topic="Mixed" difficulty="Medium">
+    <text>In the context of Layer 2 broadcasts, what happens when users aren the same broadcast domain?</text>
+    <option key="A" correct="false">Banawidth is optimized</option>
+    <option key="B" correct="true">Broadcast storm can occur</option>
+    <option key="C" correct="false">Information is securely encrypted</option>
+    <option key="D" correct="false">Broadcasts are isolated</option>
+    <explanation>Extracted from: mid-2.pdf page 23</explanation>
+  </question>
+  <question id="23" topic="VMs" difficulty="Medium">
+    <text>Which network component is responsible for connecting VMs to external networks?</text>
+    <option key="A" correct="false">Physical switch</option>
+    <option key="B" correct="true">ne</option>
+    <option key="C" correct="false">vswitcn</option>
+    <option key="D" correct="false">Port group</option>
+    <explanation>Extracted from: mid-2.pdf page 24</explanation>
+  </question>
+  <question id="24" topic="VMs" difficulty="Medium">
+    <text>What is the significance of VMs being in the same port group on different hosts?</text>
+    <option key="A" correct="false">They cannot communicate with each other</option>
+    <option key="B" correct="true">They communicate through physical switches</option>
+    <option key="C" correct="false">They communicate directly without using physical switches</option>
+    <option key="D" correct="false">They require a dedicated VLAN for communication</option>
+    <explanation>Extracted from: mid-2.pdf page 25</explanation>
+  </question>
+  <question id="25" topic="VLAN" difficulty="Medium">
+    <text>Uplinks in VLAN is used to connect</text>
+    <option key="A" correct="false">Switch to switch</option>
+    <option key="B" correct="false">host to switch.</option>
+    <option key="C" correct="true">dvs to physical NIC</option>
+    <option key="D" correct="false">Noneofthem.</option>
+    <explanation>Extracted from: mid-2.pdf page 26</explanation>
+  </question>
+  <question id="26" topic="Mixed" difficulty="Medium">
+    <text>Storage virtualization abstracts resources on... into data store</text>
+    <option key="A" correct="true">FCSAN</option>
+    <option key="B" correct="false">None ot the above</option>
+    <option key="C" correct="false">IPsan</option>
+    <option key="D" correct="false">nas</option>
+    <explanation>Extracted from: mid-2.pdf page 27</explanation>
+  </question>
+  <question id="27" topic="Mixed" difficulty="Medium">
+    <text>What does the source end not know in the Broadcast communication mode?</text>
+    <option key="A" correct="false">Devices in the same broadcast domain</option>
+    <option key="B" correct="true">Receivers address</option>
+    <option key="C" correct="false">Path between the receiver and suurce end</option>
+    <option key="D" correct="false">Query from other devices</option>
+    <explanation>Extracted from: mid-2.pdf page 28</explanation>
+  </question>
+  <question id="28" topic="SAN" difficulty="Medium">
+    <text>Storage resource types can be classified into three categories DAS, NAS, SAN. DAS stands for...</text>
+    <option key="A" correct="true">Direct Attached Storage</option>
+    <option key="B" correct="false">Dynamic Attached Storage</option>
+    <option key="C" correct="false">Distributed Attached Storage</option>
+    <option key="D" correct="false">None of the above.</option>
+    <explanation>Extracted from: mid-2.pdf page 29 | mid-2.pdf page 30</explanation>
+  </question>
+  <question id="29" topic="Mixed" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
+    <option key="A" correct="false">Physical server can be connected to multiple DVS.</option>
+    <option key="B" correct="false">Physical server can be connected to multiple standard vSwitches.</option>
+    <option key="C" correct="true">Standard vSwitches can be deployed across physical servers,</option>
+    <option key="D" correct="false">DVS can be connected to multiple physical servers.</option>
+    <explanation>Extracted from: mid-2.pdf page 31</explanation>
+  </question>
+  <question id="30" topic="SAN" difficulty="Medium">
+    <text>Which SAN architectureis established using the iSCSI protocol?</text>
+    <option key="A" correct="false">iscsisan</option>
+    <option key="B" correct="true">FCoESAN</option>
+    <option key="C" correct="false">iPsan</option>
+    <option key="D" correct="false">FCSAN</option>
+    <explanation>Extracted from: mid-2.pdf page 32</explanation>
+  </question>
+  <question id="31" topic="Mixed" difficulty="Medium">
+    <text>What does QoS stand for in the context of Cloud computing? I</text>
+    <option key="A" correct="true">Quality of Service</option>
+    <option key="B" correct="false">Query of Snapshots</option>
+    <option key="C" correct="false">Quick Operation System</option>
+    <option key="D" correct="false">Quota of Synchronization</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image1.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="32" topic="Mixed" difficulty="Medium">
+    <text>What aoes Qos stand Tor In the context of Cloud computing?</text>
+    <option key="A" correct="true">eo) Quality of Service</option>
+    <option key="B" correct="false">Query of Snapshots</option>
+    <option key="C" correct="false">Quick Operation System</option>
+    <option key="D" correct="false">Quota of Synchronization</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image2.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="33" topic="VMs" difficulty="Medium">
+    <text>which of tne rolowing methoas Is the most common method Tor creating VMS £</text>
+    <option key="A" correct="true">Clonea VMtoa VM.</option>
+    <option key="B" correct="false">Create a bare VM.</option>
+    <option key="C" correct="false">Create an using a VM template.</option>
+    <option key="D" correct="false">Convert a VM template into a VM.</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image3.png</explanation>
+  </question>
+  <question id="34" topic="Mixed" difficulty="Medium">
+    <text>ee eee eee eee NT INE NT AE EIN ANE EERIE ES Ne Incompatible Migration Cluster (IMC) function enabled,</text>
+    <option key="A" correct="false">None of them.</option>
+    <option key="B" correct="false">there is no CPU constraint.</option>
+    <option key="C" correct="false">the VM CPU configuration must be higher than the CPU function set of the destination cluster.</option>
+    <option key="D" correct="true">the VM CPU configuration must be lower than the CPU function set of the destination cluster.</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image5.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="35" topic="Mixed" difficulty="Medium">
+    <text>WVITIGTT OT UTE TONOWITIY Io TOL COMEOLS</text>
+    <option key="A" correct="false">The VM template is used S VMs in batches.</option>
+    <option key="B" correct="false">AVM template is a copy of a VM containing an OS, applications, and VM specifications.</option>
+    <option key="C" correct="false">VM template does not occupy host resources.</option>
+    <option key="D" correct="true">VM template runs applications to process computing tasks.</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image7.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="36" topic="Mixed" difficulty="Medium">
+    <text>Widlls d TOotilGuorlrOr GHallyilly da Uala store IO a VIVI Te yal Illy sildreu Ulohs © I</text>
+    <option key="A" correct="true">Shared disks cannot be migrated</option>
+    <option key="B" correct="false">Shared disks must be in a running state for migration</option>
+    <option key="C" correct="false">Shared disks must be migrated individually</option>
+    <option key="D" correct="false">Shared disks must be attached to VMs for successful migration</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image9.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="37" topic="VMs" difficulty="Medium">
+    <text>What is the significance of VMs being In the same port group on allferent hosts?</text>
+    <option key="A" correct="false">They communicate directly without using physical switches</option>
+    <option key="B" correct="true">They communicate through physical switches te _</option>
+    <option key="C" correct="false">They require a dedicated VLAN for communication</option>
+    <option key="D" correct="false">They cannot communicate with each other</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image11.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="38" topic="Mixed" difficulty="Medium">
+    <text>nn on on en on ee ee on oe ne EO IE OEE IE another data store?</text>
+    <option key="A" correct="false">The source and destination storage devices are associated with the same host.</option>
+    <option key="B" correct="false">The destination data store has sufficient storage space.</option>
+    <option key="C" correct="true">Allofthem.</option>
+    <option key="D" correct="false">No graphics processing units (GPUs) are mounted to the VMs.</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image13.png</explanation>
+  </question>
+  <question id="39" topic="Mixed" difficulty="Medium">
+    <text>storage virtualization abstracts Tesources Qir....... INLO Gata Store</text>
+    <option key="A" correct="true">NAS</option>
+    <option key="B" correct="false">IPSAN</option>
+    <option key="C" correct="false">FCSAN</option>
+    <option key="D" correct="false">None of the above</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image15.png</explanation>
+  </question>
+  <question id="40" topic="Mixed" difficulty="Medium">
+    <text>TOW Manly Us Ilda VIVE IL TMds (WO Lilial COTS SOCKELS &amp;</text>
+    <option key="A" correct="true">Four</option>
+    <option key="B" correct="false">One</option>
+    <option key="C" correct="false">Three</option>
+    <option key="D" correct="false">Two</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image17.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="41" topic="Mixed" difficulty="Medium">
+    <text>TTOW TNGHY WP Vo lia VINEE IE Tid LV) Lilidll GUTS SUURE LoS</text>
+    <option key="A" correct="true">eo) Four</option>
+    <option key="B" correct="false">One</option>
+    <option key="C" correct="false">Three</option>
+    <option key="D" correct="false">Two</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image18.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="42" topic="VMs" difficulty="Medium">
+    <text>quotas are set to 1000, 2000, and 4000, respectively. The limit attribute of VM C is set to 1000 MHz.When thelepu workloads of the VMs are heavy, VM B can obtain a computing capability of</text>
+    <option key="A" correct="false">None of them.</option>
+    <option key="B" correct="true">600Mbz.</option>
+    <option key="C" correct="false">1200 MHz,</option>
+    <option key="D" correct="false">1000 MHz,</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image19.png</explanation>
+  </question>
+  <question id="43" topic="Mixed" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
+    <option key="A" correct="false">Trunk link can connect switch to a router.</option>
+    <option key="B" correct="true">Frames transmitted on the trunk link are untagged frames.</option>
+    <option key="C" correct="false">Trunk link can connect switches.</option>
+    <option key="D" correct="false">Trunk link can aid data from different VLANs.</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image23.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="44" topic="Mixed" difficulty="Medium">
+    <text>which of tne rovowing IS not correct?</text>
+    <option key="A" correct="true">Trunk link can connect switch to a router.</option>
+    <option key="B" correct="false">eo) Frames transmitted on the trunk link are untagged frames.</option>
+    <option key="C" correct="false">Trunk link can connect switches.</option>
+    <option key="D" correct="false">Trunk link can carry data from different VLANs.</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image24.png</explanation>
+  </question>
+  <question id="45" topic="VLAN" difficulty="Medium">
+    <text>EE AN ND ET EE RE EEE EE AED TR RE Ee ee eee is inconsistent with the default VLAN ID?</text>
+    <option key="A" correct="false">Nags the frame with the default VLAN ID</option>
+    <option key="B" correct="false">Removes the PVID tag</option>
+    <option key="C" correct="false">Discards the frame</option>
+    <option key="D" correct="true">Transmits the frame without modifications</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image25.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="46" topic="Mixed" difficulty="Medium">
+    <text>Which type of frames are typically transmitted on an Access link?</text>
+    <option key="A" correct="true">Untagged frames</option>
+    <option key="B" correct="false">VLAN frames</option>
+    <option key="C" correct="false">Tagged frames</option>
+    <option key="D" correct="false">Broadcast frames</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image27.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="47" topic="SAN" difficulty="Medium">
+    <text>Inthe singie-switcning MOGe OT Ir SAN NEtwWOrKing, WNal allows MUITIPle NOSTS TO snare ne same storage device? |)</text>
+    <option key="A" correct="false">Direct connections</option>
+    <option key="B" correct="false">Ethernet cards</option>
+    <option key="C" correct="false">Ethernet switch</option>
+    <option key="D" correct="true">iSCSI HBA cards</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image29.png</explanation>
+  </question>
+  <question id="48" topic="Mixed" difficulty="Medium">
+    <text>TEC LETS SITIO OMVICMT ETS SPIRIT TE SPIN PIS EUV E ANI ge WUTC CAPS PETES PIO LS A SHIGIe Lie same storage device?</text>
+    <option key="A" correct="false">Direct connections</option>
+    <option key="B" correct="false">Ethernet cards</option>
+    <option key="C" correct="true">Ethernet switch</option>
+    <option key="D" correct="false">iscsi HBA cards</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image30.png</explanation>
+  </question>
+  <question id="49" topic="Mixed" difficulty="Medium">
+    <text>Wnat Goes a router use Tor Torwaraing data packets’ I</text>
+    <option key="A" correct="false">Ethernet MAC addresses</option>
+    <option key="B" correct="false">SDH ports</option>
+    <option key="C" correct="false">Link layer protocols</option>
+    <option key="D" correct="true">IP addresses</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image31.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="50" topic="Mixed" difficulty="Medium">
+    <text>What does a router use for forwarding data packets?</text>
+    <option key="A" correct="false">Ethernet MAC addresses</option>
+    <option key="B" correct="false">SDH ports</option>
+    <option key="C" correct="true">Link layer protocols</option>
+    <option key="D" correct="false">eo) IP addresses</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image32.png</explanation>
+  </question>
+  <question id="51" topic="Mixed" difficulty="Medium">
+    <text>What is the primary action of an access port when receiving a trame without a tag?</text>
+    <option key="A" correct="false">Removes the PVID tag</option>
+    <option key="B" correct="false">Transmits the frame without modifications</option>
+    <option key="C" correct="false">Discards the frame</option>
+    <option key="D" correct="true">Tags the frame a the default VLAN ID</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image33.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="52" topic="Mixed" difficulty="Medium">
+    <text>What is the primary action of an access port when receiving a frame without a tag?</text>
+    <option key="A" correct="false">Removes the PVID tag</option>
+    <option key="B" correct="false">Transmits the frame without modifications</option>
+    <option key="C" correct="true">Discards the frame fe) Tags the frame with the default VLAN ID</option>
+    <option key="D" correct="false">Qubmit ancwer )</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image34.png</explanation>
+  </question>
+  <question id="53" topic="Mixed" difficulty="Medium">
+    <text>Meee eee ee eee oe es ene TN I EA FN ATT NR ETRE CUTE broadcast domain before the target receiver replies in unicast mode?</text>
+    <option key="A" correct="true">Multicast</option>
+    <option key="B" correct="false">Broadcast</option>
+    <option key="C" correct="false">Duplex</option>
+    <option key="D" correct="false">Unicast</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image35.png</explanation>
+  </question>
+  <question id="54" topic="Mixed" difficulty="Medium">
+    <text>What does the term port group refer to In the context of vowitcnes?</text>
+    <option key="A" correct="false">Agroup of physical switch ports</option>
+    <option key="B" correct="false">A network interface card (NIC) b</option>
+    <option key="C" correct="false">Acollection of VMs on the same host</option>
+    <option key="D" correct="true">A group of virtual switch ports</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image37.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="55" topic="VLAN" difficulty="Medium">
+    <text>Which link type is more likely to be used for interconnecting vswitches within the same VLAN?</text>
+    <option key="A" correct="true">Trunk link</option>
+    <option key="B" correct="false">Router link</option>
+    <option key="C" correct="false">uplink cy)</option>
+    <option key="D" correct="false">Access link</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image39.png</explanation>
+  </question>
+  <question id="56" topic="Mixed" difficulty="Medium">
+    <text>In a network, wnat Is the primary purpose of tagging frames on a [runk link?</text>
+    <option key="A" correct="true">To differentiate between VLANs</option>
+    <option key="B" correct="false">To filter broadcast traffic</option>
+    <option key="C" correct="false">To eens the switch's IP address</option>
+    <option key="D" correct="false">To enhance network performance</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image41.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="57" topic="Mixed" difficulty="Medium">
+    <text>In a network, what Is the primary purpose of tagging frames ona Trunk link?</text>
+    <option key="A" correct="true">To differentiate between VLANs</option>
+    <option key="B" correct="false">To filter broadcast traffic</option>
+    <option key="C" correct="false">Tanfentty the switch's IP address</option>
+    <option key="D" correct="false">To enhance network performance</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image42.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="58" topic="Mixed" difficulty="Medium">
+    <text>All of the following are storage units that can bg encapsulated into data stores except</text>
+    <option key="A" correct="false">Local disks on hosts</option>
+    <option key="B" correct="false">Storage pools on FusionStorage</option>
+    <option key="C" correct="false">None of the above</option>
+    <option key="D" correct="true">Local memory on hosts</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image43.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="59" topic="Mixed" difficulty="Medium">
+    <text>All of the following are storage units that can be encapsulated into data stores except</text>
+    <option key="A" correct="false">Local disks on hosts</option>
+    <option key="B" correct="false">Storage poolon FusionStorage</option>
+    <option key="C" correct="false">None of the above</option>
+    <option key="D" correct="true">Local memory on hosts</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image44.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="60" topic="Mixed" difficulty="Medium">
+    <text>All of the following are storage units thatcan be encapsulated into data stores except</text>
+    <option key="A" correct="false">LUNs on the FC SAN storage</option>
+    <option key="B" correct="false">File systems on the NAS</option>
+    <option key="C" correct="false">Shard folders on Local disks</option>
+    <option key="D" correct="true">None of the above</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image45.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="61" topic="VLAN" difficulty="Medium">
+    <text>Ina network, why do devices at botn ends of a Irunk link need to Identi#yVLANS!</text>
+    <option key="A" correct="false">To ensure all frames are tagged</option>
+    <option key="B" correct="false">To maintain physical network isolation</option>
+    <option key="C" correct="false">To prevent data frame transmission</option>
+    <option key="D" correct="true">To route frames to the correct VLANs</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image47.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="62" topic="Network" difficulty="Medium">
+    <text>Which type of link is used to connect switches or a switch to a router in a network? [&gt;</text>
+    <option key="A" correct="true">Trunk link</option>
+    <option key="B" correct="false">Tagged link</option>
+    <option key="C" correct="false">Access link</option>
+    <option key="D" correct="false">VLANIink</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image49.png</explanation>
+  </question>
+  <question id="63" topic="Mixed" difficulty="Medium">
+    <text>Which of the following is not correct?</text>
+    <option key="A" correct="true">A data store can contain multiple stage devices.</option>
+    <option key="B" correct="false">A data store indicates a manageable and operable logical storage unit.</option>
+    <option key="C" correct="false">None of the above.</option>
+    <option key="D" correct="false">A data store carries specific VM services, such as disk creation.</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image51.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="64" topic="Mixed" difficulty="Medium">
+    <text>Disk from common ners</text>
+    <option key="A" correct="true">can be used by only one VM.</option>
+    <option key="B" correct="false">can be used by multiple VMs.</option>
+    <option key="C" correct="false">cannot be used by any VM.</option>
+    <option key="D" correct="false">none of the above.</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image53.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="65" topic="Mixed" difficulty="Medium">
+    <text>Disk from common disk type</text>
+    <option key="A" correct="true">can be used by only one VM.</option>
+    <option key="B" correct="false">can be used by multiple VMs.</option>
+    <option key="C" correct="false">cannot be used by any VM.</option>
+    <option key="D" correct="false">none of the above.</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image54.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="66" topic="Mixed" difficulty="Medium">
+    <text>All of the following are storage units that can be encapsulated into data stores except Is</text>
+    <option key="A" correct="false">None of the above</option>
+    <option key="B" correct="false">File systems on the NAS</option>
+    <option key="C" correct="true">LUNs on theiScsi</option>
+    <option key="D" correct="false">Local disks on hosts</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image57.png</explanation>
+  </question>
+  <question id="67" topic="Mixed" difficulty="Medium">
+    <text>What is one of theproblems caused by Layer 2 broadcasts?</text>
+    <option key="A" correct="true">Reduced information security</option>
+    <option key="B" correct="false">Reduced network latency</option>
+    <option key="C" correct="false">Improved information security</option>
+    <option key="D" correct="false">Enhanced network performance</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image59.png (Correct option not detected.)</explanation>
+  </question>
+  <question id="68" topic="Mixed" difficulty="Medium">
+    <text>what Is one of the problems caused by Layer 2 broadcasts ¢</text>
+    <option key="A" correct="true">Reduced information security —_—_—_</option>
+    <option key="B" correct="false">Reduced network latency</option>
+    <option key="C" correct="false">Improved information gacurity</option>
+    <option key="D" correct="false">Enhanced network performance</option>
+    <explanation>Extracted from: Quiz 02 - Real.docx word/media/image60.png (Correct option not detected.)</explanation>
+  </question>
 </quiz>
