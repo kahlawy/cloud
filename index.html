@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cloud Computing Quiz</title>
+  <title>PhD Software Engineering Quizzes</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -16,10 +16,11 @@
       <div class="setupCard">
         <div class="setupHeader">
           <div>
-            <h1 class="setupTitle">Cloud Computing Quiz</h1>
+            <h1 class="setupTitle">PhD Software Engineering Quizzes</h1>
             <!-- <p class="setupSub">Questions are loaded from <code>questions.xml</code></p> -->
           </div>
-          <span class="badge">@Kahlawy</span>
+          <span class="badge"> <a href="https://www.linkedin.com/in/kahlawy/" target="_blank">@Kahlawy</a>
+          </span>
         </div>
 
         <div class="setupBody">
@@ -37,21 +38,31 @@
             </div>
           </div>
 
-          <div class="fileUploadSection">
-            <div class="uploadHeader">
-              <svg class="uploadIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="17 8 12 3 7 8"></polyline>
-                <line x1="12" y1="3" x2="12" y2="15"></line>
-              </svg>
-              <span>Or load questions from file</span>
+          <div class="field">
+            <label>Select Quiz</label>
+            <div class="quizButtonsGrid">
+              <button type="button" class="quizBtn" data-url="https://kahlawy.github.io/cloud/questions.xml">
+                <span class="quizIcon">📘</span>
+                <span class="quizName">Quiz 1</span>
+                <small>Cloud Computing</small>
+              </button>
+              <button type="button" class="quizBtn" data-url="https://kahlawy.github.io/cloud/quiz2.xml">
+                <span class="quizIcon">📗</span>
+                <span class="quizName">Quiz 2</span>
+                <small>Software Project Managment</small>
+              </button>
+              <button type="button" class="quizBtn" data-url="https://kahlawy.github.io/cloud/quiz3.xml">
+                <span class="quizIcon">📙</span>
+                <span class="quizName">Quiz 3</span>
+                <small>Digital Image Processing (DIP) </small>
+              </button>
+              <button type="button" class="quizBtn" data-url="https://kahlawy.github.io/cloud/quiz4.xml">
+                <span class="quizIcon">📕</span>
+                <span class="quizName">Quiz 4</span>
+                <small>Final Exam</small>
+              </button>
             </div>
-            <label for="xmlFileInput" class="fileUploadLabel">
-              <input id="xmlFileInput" type="file" accept=".xml" class="fileInput" />
-              <span class="fileUploadBtn">📁 Choose XML File</span>
-            </label>
-            <small class="uploadHint">Select questions.xml or any custom XML file</small>
+            <small>Click on any quiz to load questions from GitHub Pages</small>
           </div>
 
           <div class="toggles">
@@ -87,7 +98,7 @@
   <section id="quizScreen" class="screen quizScreen hidden">
 
     <header class="pptHero">
-      <h1 class="pptTitle">Cloud Computing Quiz</h1>
+      <h1 class="pptTitle" id="quizTitle">Quiz</h1>
 
       <div class="pptRibbon">
         <div class="cap left"></div>
