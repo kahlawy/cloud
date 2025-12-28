@@ -1,171 +1,442 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
+<!-- Source: Quiz2-Sample_01-Answers.pdf -->
+<!-- Note: Export target requires at least 4 <option> elements per <question>. -->
 
-  <!-- Exam_3 -->
-  <question id="1" topic="Storage" difficulty="Easy">
-    <text>...... is not a storage resource type.</text>
-    <option key="A" correct="true">Local memory</option>
-    <option key="B" correct="false">SAN</option>
-    <option key="C" correct="false">NAS</option>
-    <option key="D" correct="false">All of the above</option>
-    <explanation>Answer taken from Exam_3 PDF (selected option A).</explanation>
-  </question>
+<!-- Section A: True/False (encoded as 4-option questions) -->
 
-  <question id="2" topic="Storage" difficulty="Medium">
-    <text>Which of the following is not correct?</text>
-    <option key="A" correct="false">A data store indicates a manageable and operable logical storage unit.</option>
-    <option key="B" correct="true">A data store can contain multiple storage devices.</option>
-    <option key="C" correct="false">A data store carries specific VM services, such as disk creation.</option>
-    <option key="D" correct="false">None of the above.</option>
-    <explanation>Answer taken from Exam_3 PDF (selected option B).</explanation>
-  </question>
+<question id="TF1" topic="Smoothing Filters" difficulty="Easy">
+<text>The smoothing filters are useful for highlighting fine details in images.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Smoothing filters are used for noise reduction and blurring, not for highlighting fine details.</explanation>
+</question>
 
-  <question id="3" topic="Storage" difficulty="Easy">
-    <text>Disk from common disk type</text>
-    <option key="A" correct="true">can be used by only one VM.</option>
-    <option key="B" correct="false">can be used by multiple VMs.</option>
-    <option key="C" correct="false">cannot be used by any VM.</option>
-    <option key="D" correct="false">none of the above.</option>
-    <explanation>Answer taken from Exam_3 PDF (selected option A).</explanation>
-  </question>
+<question id="TF2" topic="Spatial Enhancement" difficulty="Easy">
+<text>Spatial mask-based enhancement methods consist of moving an odd-sized filter that maps to the rectangular neighborhood area, from pixel to pixel in the original input image.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Spatial mask-based enhancement involves moving a filter mask over every pixel in the original image.</explanation>
+</question>
 
-  <question id="4" topic="Storage" difficulty="Easy">
-    <text>Network Attached Storage (NAS) supports</text>
-    <option key="A" correct="false">virtualized data stores.</option>
-    <option key="B" correct="false">thin provisioning.</option>
-    <option key="C" correct="false">advanced features, such as snapshots.</option>
-    <option key="D" correct="true">all of the above.</option>
-    <explanation>Answer taken from Exam_3 PDF (selected option D).</explanation>
-  </question>
+<question id="TF3" topic="Boundary Handling" difficulty="Medium">
+<text>The approach of truncating missed edge pixels at filtering only works with some filters and it can add extra code and slow down processing.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Truncating edge pixels (processing only pixels with full neighbors) may require extra code and can slow processing.</explanation>
+</question>
 
-  <question id="5" topic="Storage" difficulty="Easy">
-    <text>Which of the following is provided by FC SAN as a storage device</text>
-    <option key="A" correct="false">Shared directory.</option>
-    <option key="B" correct="true">Logical unit number (LUN).</option>
-    <option key="C" correct="false">Storage pool.</option>
-    <option key="D" correct="false">None of the above.</option>
-    <explanation>Answer taken from Exam_3 PDF (selected option B).</explanation>
-  </question>
+<question id="TF4" topic="Spatial Filtering" difficulty="Easy">
+<text>In nonlinear spatial filtering, the filter response is calculated by the sum of products of the filter weights and the corresponding image pixels in the area spanned by the filter.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>This describes linear spatial filtering. Nonlinear filtering (for example median) does not use a sum of products.</explanation>
+</question>
 
-  <question id="6" topic="Storage" difficulty="Easy">
-    <text>Which of the following storage resources provides shared directory as a storage device</text>
-    <option key="A" correct="false">SAN.</option>
-    <option key="B" correct="true">NAS.</option>
-    <option key="C" correct="false">Local disk.</option>
-    <option key="D" correct="false">None of the above.</option>
-    <explanation>Answer taken from Exam_3 PDF (selected option B).</explanation>
-  </question>
+<question id="TF5" topic="Smoothing Masks" difficulty="Easy">
+<text>The weights of the smoothing mask must be positive and their sum after normalization is 1.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Smoothing (averaging) masks typically use positive weights that sum to 1 to preserve average brightness.</explanation>
+</question>
 
+<question id="TF6" topic="Sharpening" difficulty="Easy">
+<text>Sharpening is useful for reducing noise, suppressing edges and eliminating small details.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>This description matches smoothing, sharpening highlights edges and fine details.</explanation>
+</question>
 
-  <!-- Exam_4 -->
-  <question id="7" topic="Network" difficulty="Easy">
-    <text>Access link in VLAN is used to connect</text>
-    <option key="A" correct="false">host to host.</option>
-    <option key="B" correct="true">host to switch.</option>
-    <option key="C" correct="false">switch to switch.</option>
-    <option key="D" correct="false">switch to router.</option>
-    <explanation>Answer taken from Exam_4 PDF (selected option B).</explanation>
-  </question>
+<question id="TF7" topic="Smoothing Filters" difficulty="Easy">
+<text>Blurring produced by weighted average filter is less than that produced by average filter.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Weighted averaging emphasizes the center pixel, usually produces less blur than uniform averaging.</explanation>
+</question>
 
-  <question id="8" topic="Network" difficulty="Medium">
-    <text>Which of the following is not correct?</text>
-    <option key="A" correct="true">Standard vSwitches can be deployed across physical servers.</option>
-    <option key="B" correct="false">DVS can be connected to multiple physical servers.</option>
-    <option key="C" correct="false">Physical server can be connected to multiple standard vSwitches.</option>
-    <option key="D" correct="false">Physical server can be connected to multiple DVS.</option>
-    <explanation>Answer taken from Exam_4 PDF (selected option A).</explanation>
-  </question>
+<question id="TF8" topic="Gaussian Filter" difficulty="Medium">
+<text>As sigma of Gaussian filter decreases, more smoothing occurs by the Gaussian filter.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Larger sigma produces a wider Gaussian and more smoothing.</explanation>
+</question>
 
-  <question id="9" topic="Network" difficulty="Medium">
-    <text>Which of the following is not correct?</text>
-    <option key="A" correct="false">The virtual local area network (VLAN) can isolate broadcast domains.</option>
-    <option key="B" correct="false">Users in different VLANs cannot communicate with each other.</option>
-    <option key="C" correct="true">The VLAN technology divides users into multiple physical networks (groups).</option>
-    <option key="D" correct="false">The VLAN technology provides a management method to control the communication between terminals.</option>
-    <explanation>Answer taken from Exam_4 PDF (selected option C).</explanation>
-  </question>
+<question id="TF9" topic="Separable Kernels" difficulty="Easy">
+<text>Separable 2D kernel gives more computational saving than 2D non-separable kernel.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Separable kernels allow 2D convolution as two 1D convolutions, reducing computation.</explanation>
+</question>
 
-  <question id="10" topic="Network" difficulty="Medium">
-    <text>Which of the following is not correct?</text>
-    <option key="A" correct="false">Trunk link can connect switches.</option>
-    <option key="B" correct="true">Frames transmitted on the trunk link are untagged frames.</option>
-    <option key="C" correct="false">Trunk link can carry data from different VLANs.</option>
-    <option key="D" correct="false">Trunk link can connect switch to a router.</option>
-    <explanation>Answer taken from Exam_4 PDF (selected option B).</explanation>
-  </question>
+<question id="TF10" topic="Sharpening Filters" difficulty="Easy">
+<text>Sharpening spatial filters can be represented by partial derivatives.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Many sharpening filters (for example Laplacian) are based on partial derivatives.</explanation>
+</question>
 
-  <question id="11" topic="Network" difficulty="Easy">
-    <text>Uplinks in VLAN is used to connect</text>
-    <option key="A" correct="false">Switch to switch</option>
-    <option key="B" correct="true">DVS to physical NIC</option>
-    <option key="C" correct="false">host to switch.</option>
-    <option key="D" correct="false">None of the above.</option>
-    <explanation>Answer taken from Exam_4 PDF (selected option B).</explanation>
-  </question>
+<question id="TF11" topic="Unsharp Masking" difficulty="Medium">
+<text>Applying unsharp filter to an image gets a new image that highlights grayish edges and other discontinuities on a dark featureless background.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>The described output is typically associated with the Laplacian response, not the final unsharp result.</explanation>
+</question>
 
+<question id="TF12" topic="Laplacian" difficulty="Easy">
+<text>Rotating the image and applying the Laplacian filter gives the same result as applying the Laplacian filter and then rotating the image.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>The Laplacian is isotropic (rotation-invariant), so rotation and filtering commute.</explanation>
+</question>
 
-  <!-- Exam_5 -->
-  <question id="12" topic="VMs" difficulty="Medium">
-    <text>Which of the following conditions are not required to migrate VM storage from data store to another data store?</text>
-    <option key="A" correct="false">The destination data store has sufficient storage space.</option>
-    <option key="B" correct="false">The source and destination storage devices are associated with the same host.</option>
-    <option key="C" correct="true">No graphics processing units (GPUs) are mounted to the VMs.</option>
-    <option key="D" correct="false">All of the above.</option>
-    <explanation>Answer taken from Exam_5 PDF (selected option C).</explanation>
-  </question>
+<question id="TF13" topic="Edges" difficulty="Easy">
+<text>Edges are pixels where image brightness changes abruptly.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Edges correspond to abrupt changes in intensity.</explanation>
+</question>
 
-  <question id="13" topic="VMs" difficulty="Easy">
-    <text>Which of the following obtains CPUs and memory resources from the host?</text>
-    <option key="A" correct="false">VM template.</option>
-    <option key="B" correct="true">VM.</option>
-    <option key="C" correct="false">VM and VM template.</option>
-    <option key="D" correct="false">None of the above.</option>
-    <explanation>Answer taken from Exam_5 PDF (selected option B).</explanation>
-  </question>
+<question id="TF14" topic="Edge Types" difficulty="Medium">
+<text>When two steps appear close together, they compose a roof edge.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Two steps close together compose a line edge, two ramps close together form a roof edge.</explanation>
+</question>
 
-  <question id="14" topic="VMs" difficulty="Medium">
-    <text>Which of the following is not correct?</text>
-    <option key="A" correct="false">A VM template is a copy of a VM containing an OS, applications, and VM specifications.</option>
-    <option key="B" correct="false">VM template does not occupy disk resources.</option>
-    <option key="C" correct="false">The VM template is used to create VMs in batches.</option>
-    <option key="D" correct="true">VM template runs applications to process computing tasks.</option>
-    <explanation>Answer taken from Exam_5 PDF (selected option D).</explanation>
-  </question>
+<question id="TF15" topic="Gradients" difficulty="Easy">
+<text>The edge direction is always parallel to the direction of the intensity gradient.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>The edge direction is perpendicular to the intensity gradient direction.</explanation>
+</question>
 
-  <question id="15" topic="VMs" difficulty="Easy">
-    <text>Which of the following methods is not used to create VM template?</text>
-    <option key="A" correct="false">Convert a VM into a VM template.</option>
-    <option key="B" correct="false">Clone a VM to a VM template.</option>
-    <option key="C" correct="true">Create a bare VM template.</option>
-    <option key="D" correct="false">Clone a VM template to a VM template.</option>
-    <explanation>Answer taken from Exam_5 PDF (selected option C).</explanation>
-  </question>
+<question id="TF16" topic="Derivatives" difficulty="Medium">
+<text>First derivative edge detection masks produce zero-crossings at points of high change.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Zero-crossings are produced by second-derivative operators, not first-derivative masks.</explanation>
+</question>
 
-  <question id="16" topic="VMs" difficulty="Easy">
-    <text>How many CPUs in a VM if it has two Dual core sockets?</text>
-    <option key="A" correct="false">One</option>
-    <option key="B" correct="false">Two</option>
-    <option key="C" correct="false">Three</option>
-    <option key="D" correct="true">Four</option>
-    <explanation>Answer taken from Exam_5 PDF (selected option D).</explanation>
-  </question>
+<question id="TF17" topic="Second Derivative" difficulty="Hard">
+<text>Second derivative edge detection masks are more sensitive to noise, but they give better edge localization.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Second-order derivatives are more noise sensitive, often yield better localization than first-order derivatives.</explanation>
+</question>
 
-  <question id="17" topic="VMs" difficulty="Hard">
-    <text>Which of the following does not prevent migrating VM storage from data store to another data store?</text>
-    <option key="A" correct="false">Shared disks that have been attached to VM.</option>
-    <option key="B" correct="false">Disks on which clone disks are attached to VM.</option>
-    <option key="C" correct="false">Disks that contain VM snapshots.</option>
-    <option key="D" correct="true">None of the above.</option>
-    <explanation>Answer taken from Exam_5 PDF (selected option D).</explanation>
-  </question>
+<question id="TF18" topic="Roberts Operator" difficulty="Easy">
+<text>Robert mask gives information about edge direction.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Roberts masks can provide information about edge direction.</explanation>
+</question>
 
-  <question id="18" topic="VMs" difficulty="Easy">
-    <text>Which of the following methods is the most common method for creating VMs?</text>
-    <option key="A" correct="false">Convert a VM template to a VM.</option>
-    <option key="B" correct="false">Clone a VM to a VM.</option>
-    <option key="C" correct="false">Create a bare VM.</option>
-    <option key="D" correct="true">Create a VM using a VM template.</option>
-    <explanation>Answer taken from Exam_5 PDF (selected option D).</explanation>
-  </question>
+<question id="TF19" topic="Prewitt vs Sobel" difficulty="Medium">
+<text>Prewitt mask is less susceptible to noise than Sobel mask.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Answer follows the instructor marking in the provided file.</explanation>
+</question>
+
+<question id="TF20" topic="Laplacian" difficulty="Medium">
+<text>The absolute or squared value of Laplacian operator produces double edges.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Laplacian produces positive and negative responses around an edge, so absolute or squared magnitude can appear as double edges.</explanation>
+</question>
+
+<question id="TF21" topic="DoG vs LoG" difficulty="Medium">
+<text>The DoG operator takes more computation time than LoG operator.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>DoG is often used as a computationally efficient approximation to LoG.</explanation>
+</question>
+
+<question id="TF22" topic="Canny" difficulty="Hard">
+<text>Canny edge detector performs non-maxima suppression by incorporating only the weak edge pixels that are 8-connected to the strong edge pixels.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Answer follows the instructor marking in the provided file.</explanation>
+</question>
+
+<question id="TF23" topic="Canny" difficulty="Medium">
+<text>In Canny edge detector, the edge strength calculation step at each pixel is done by computing the gradient magnitude using the Marr-Hildreth operator.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Canny typically computes gradient magnitude using operators such as Sobel, Marr-Hildreth refers to LoG based detection.</explanation>
+</question>
+
+<question id="TF24" topic="Noise Models" difficulty="Easy">
+<text>Noise cannot be predicted but can be approximately described in a statistical way using the probability density function.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Noise is random but can be described statistically with probability density functions.</explanation>
+</question>
+
+<question id="TF25" topic="Noise Models" difficulty="Easy">
+<text>Uniform noise is the most frequently used noise model in practice.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Gaussian noise is commonly used in practice.</explanation>
+</question>
+
+<question id="TF26" topic="Median Filter" difficulty="Medium">
+<text>It must be known in advance whether there is pepper noise or salt noise in an image for successful operation by a median filter.</text>
+<option key="A" correct="false">True</option>
+<option key="B" correct="true">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Median filtering is effective for both salt and pepper noise without needing prior knowledge.</explanation>
+</question>
+
+<question id="TF27" topic="Contra-harmonic Mean" difficulty="Hard">
+<text>Contra-harmonic mean filter can be reduced to an arithmetic or a geometric mean filter.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>Depending on Q, the contra-harmonic mean relates to other mean filters.</explanation>
+</question>
+
+<question id="TF28" topic="Median Filter" difficulty="Easy">
+<text>Median filter applies nonlinear spatial filtering.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>The median filter is a classic nonlinear order-statistics filter.</explanation>
+</question>
+
+<question id="TF29" topic="Mid-point Filter" difficulty="Medium">
+<text>Mid-point filter combines linear smoothing and nonlinear order-statistics filters.</text>
+<option key="A" correct="true">True</option>
+<option key="B" correct="false">False</option>
+<option key="C" correct="false">Not given</option>
+<option key="D" correct="false">Both True and False</option>
+<explanation>The mid-point filter averages the max and min in the neighborhood.</explanation>
+</question>
+
+<!-- Section B: Multiple Choice -->
+
+<question id="MCQ1" topic="Boundary Handling" difficulty="Easy">
+<text>........ approach deals with missing edge pixels in a spatial local enhancement method by typically substituting them with either all white or all black pixels.</text>
+<option key="A" correct="false">Omitting</option>
+<option key="B" correct="true">Padding</option>
+<option key="C" correct="false">Replication</option>
+<option key="D" correct="false">Truncation</option>
+<explanation>Padding handles missing edge pixels by adding border pixels (often black or white).</explanation>
+</question>
+
+<question id="MCQ2" topic="Spatial Enhancement" difficulty="Easy">
+<text>Spatial neighbourhood-based enhancement methods are ........</text>
+<option key="A" correct="true">two</option>
+<option key="B" correct="false">three</option>
+<option key="C" correct="false">four</option>
+<option key="D" correct="false">five</option>
+<explanation>They are generally divided into smoothing and sharpening methods.</explanation>
+</question>
+
+<question id="MCQ3" topic="Sharpening Filters" difficulty="Easy">
+<text>........ filter applies first smoothing for performing its sharpening task.</text>
+<option key="A" correct="false">Laplacian</option>
+<option key="B" correct="false">Simplified</option>
+<option key="C" correct="true">Unsharp</option>
+<option key="D" correct="false">Gaussian</option>
+<explanation>Unsharp masking subtracts a smoothed image from the original to perform sharpening.</explanation>
+</question>
+
+<question id="MCQ4" topic="Edge Models" difficulty="Easy">
+<text>In real images, when the gray-level at the edge changes gradually over a finite distance, this edge is modeled by the ........ profile.</text>
+<option key="A" correct="false">step</option>
+<option key="B" correct="true">ramp</option>
+<option key="C" correct="false">line</option>
+<option key="D" correct="false">roof</option>
+<explanation>A ramp edge models a gradual transition in intensity.</explanation>
+</question>
+
+<question id="MCQ5" topic="Edge Segmentation" difficulty="Medium">
+<text>The ........ step in edge segmentation decides which of the filter responses are edges and which are just caused by noise using thresholding.</text>
+<option key="A" correct="false">noise smoothing</option>
+<option key="B" correct="false">edge detection</option>
+<option key="C" correct="true">edge localization</option>
+<option key="D" correct="false">edge enhancement</option>
+<explanation>Edge localization includes thresholding decisions to separate edges from noise.</explanation>
+</question>
+
+<question id="MCQ6" topic="Gradients" difficulty="Easy">
+<text>The gradient direction is ........ to the edge direction in the image.</text>
+<option key="A" correct="false">parallel</option>
+<option key="B" correct="false">opposite</option>
+<option key="C" correct="false">intersecting</option>
+<option key="D" correct="true">perpendicular</option>
+<explanation>The gradient points normal to the edge, so it is perpendicular to the edge direction.</explanation>
+</question>
+
+<question id="MCQ7" topic="First Derivative Operators" difficulty="Easy">
+<text>........ filter computes the 1st derivative of an image.</text>
+<option key="A" correct="true">Sobel</option>
+<option key="B" correct="false">Laplacian</option>
+<option key="C" correct="false">DoG</option>
+<option key="D" correct="false">LoG</option>
+<explanation>Sobel is a first derivative gradient operator.</explanation>
+</question>
+
+<question id="MCQ8" topic="Second Derivative Operators" difficulty="Easy">
+<text>........ computes the 2nd derivative of an image.</text>
+<option key="A" correct="true">Laplacian</option>
+<option key="B" correct="false">Simplified</option>
+<option key="C" correct="false">Unsharp</option>
+<option key="D" correct="false">Gaussian</option>
+<explanation>The Laplacian is a second derivative operator.</explanation>
+</question>
+
+<question id="MCQ9" topic="Roberts Operator" difficulty="Medium">
+<text>........ operators respond strongly to diagonal edges running at plus or minus 45 degrees to the pixel grid, but extension to sizes greater than 2x2 is not readily possible.</text>
+<option key="A" correct="false">Gradient</option>
+<option key="B" correct="true">Robert</option>
+<option key="C" correct="false">Symmetric</option>
+<option key="D" correct="false">Kirsch</option>
+<explanation>Roberts operators are 2x2 masks and respond strongly to diagonal edges.</explanation>
+</question>
+
+<question id="MCQ10" topic="Separable Operators" difficulty="Medium">
+<text>........ operators are linearly separable, so they can be expressed as the matrix product of a column vector with a row vector.</text>
+<option key="A" correct="false">Gradient</option>
+<option key="B" correct="false">Robert</option>
+<option key="C" correct="true">Symmetric</option>
+<option key="D" correct="false">Kirsch</option>
+<explanation>Answer follows the instructor marking in the provided file (symmetric operators such as Sobel are separable).</explanation>
+</question>
+
+<question id="MCQ11" topic="Computational Complexity" difficulty="Medium">
+<text>2D separable kernel gives computational saving of order ........ operations as opposed to order N squared for 2D non-separable kernel.</text>
+<option key="A" correct="true">2N</option>
+<option key="B" correct="false">log2(N)</option>
+<option key="C" correct="false">N cubed</option>
+<option key="D" correct="false">N log2(N)</option>
+<explanation>Separable kernels reduce computation from N squared to approximately 2N operations.</explanation>
+</question>
+
+<question id="MCQ12" topic="Kirsch Operator" difficulty="Medium">
+<text>........ operators are designed to detect gradient magnitude and angle in all eight directions.</text>
+<option key="A" correct="false">Gradient</option>
+<option key="B" correct="false">Robert</option>
+<option key="C" correct="false">Symmetric</option>
+<option key="D" correct="true">Kirsch</option>
+<explanation>Kirsch uses multiple directional masks to respond to edges in eight directions.</explanation>
+</question>
+
+<question id="MCQ13" topic="Laplacian" difficulty="Easy">
+<text>Laplacian operator is isotropic which means that it is ........ invariant.</text>
+<option key="A" correct="false">intensity</option>
+<option key="B" correct="false">translation</option>
+<option key="C" correct="true">rotation</option>
+<option key="D" correct="false">shape</option>
+<explanation>Isotropic means rotation-invariant.</explanation>
+</question>
+
+<question id="MCQ14" topic="Edge Operators" difficulty="Medium">
+<text>........ operator is more sensitive to noise and unable to detect edge direction.</text>
+<option key="A" correct="false">Sobel</option>
+<option key="B" correct="false">Robert</option>
+<option key="C" correct="false">Prewitt</option>
+<option key="D" correct="true">Laplacian</option>
+<explanation>The Laplacian is a scalar second derivative, sensitive to noise and does not encode edge direction.</explanation>
+</question>
+
+<question id="MCQ15" topic="DoG" difficulty="Medium">
+<text>........ operator uses two sigma to segment edges of different widths (thicknesses).</text>
+<option key="A" correct="false">Laplacian</option>
+<option key="B" correct="false">LoG</option>
+<option key="C" correct="true">DoG</option>
+<option key="D" correct="false">Canny</option>
+<explanation>Difference of Gaussians uses two Gaussian scales (two sigmas).</explanation>
+</question>
+
+<question id="MCQ16" topic="Canny" difficulty="Hard">
+<text>Canny edge detector consists of ........ steps.</text>
+<option key="A" correct="false">three</option>
+<option key="B" correct="false">four</option>
+<option key="C" correct="false">five</option>
+<option key="D" correct="true">six</option>
+<explanation>Answer follows the instructor marking in the provided file (six steps).</explanation>
+</question>
+
+<question id="MCQ17" topic="Canny" difficulty="Medium">
+<text>In Canny edge detector, the edge normal direction quantization step is done by approximating the calculated gradient angle to only ........ angles.</text>
+<option key="A" correct="false">three</option>
+<option key="B" correct="true">four</option>
+<option key="C" correct="false">six</option>
+<option key="D" correct="false">eight</option>
+<explanation>Canny commonly quantizes gradient directions into four principal angles.</explanation>
+</question>
+
+<question id="MCQ18" topic="Mean Filters" difficulty="Medium">
+<text>The ........ mean filter works well for salt noise but fails for pepper noise.</text>
+<option key="A" correct="false">geometric</option>
+<option key="B" correct="true">harmonic</option>
+<option key="C" correct="false">arithmetic</option>
+<option key="D" correct="false">contra-harmonic</option>
+<explanation>The harmonic mean filter is effective for salt noise but fails for pepper noise.</explanation>
+</question>
+
+<question id="MCQ19" topic="Noise Reduction" difficulty="Easy">
+<text>The ........ filter is useful for removing Gaussian and uniform noises.</text>
+<option key="A" correct="false">min</option>
+<option key="B" correct="true">mean</option>
+<option key="C" correct="false">mid-point</option>
+<option key="D" correct="false">max</option>
+<explanation>Mean filtering is commonly used to reduce Gaussian and uniform noise.</explanation>
+</question>
 
 </quiz>
