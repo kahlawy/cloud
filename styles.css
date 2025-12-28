@@ -1,22 +1,27 @@
 :root {
-  --deep-green: #0f3d3e;
-  --sage-green: #7da598;
-  /* Muted sage for buttons */
+  /* 🎨 Calm & Professional Theme */
+  --primary: #4A5568;
+  --primary-light: #718096;
+  --primary-lighter: #A0AEC0;
 
-  --teal: var(--sage-green);
-  /* Fallback/Replaced */
-  --bg: #f4f6f8;
-  --card: #ffffff;
-  --ink: #0b0f14;
-  --muted: #6b7280;
+  --secondary: #5A67D8;
+  --secondary-light: #7C8ADB;
 
-  --a: #243241;
-  --b: #95b94d;
-  --c: #f3a11b;
-  --d: #c33a2b;
+  /* Base colors - Soft & Calm */
+  --bg: #F7FAFC;
+  --card: #FFFFFF;
+  --ink: #2D3748;
+  --muted: #718096;
+  --border: #E2E8F0;
 
-  --shadow: 0 18px 50px rgba(0, 0, 0, .14);
-  --softShadow: 0 12px 30px rgba(0, 0, 0, .10);
+  /* Accent colors - Subtle */
+  --a: #4A5568;
+  --b: #5A67D8;
+  --c: #48BB78;
+  --d: #F56565;
+
+  --shadow: 0 10px 40px rgba(74, 85, 104, 0.08);
+  --softShadow: 0 4px 20px rgba(74, 85, 104, 0.06);
   --maxW: 1200px;
 }
 
@@ -52,8 +57,8 @@ body {
   justify-content: center;
   padding: 24px 14px;
   background:
-    radial-gradient(1100px 650px at 15% -10%, rgba(15, 61, 62, .18), transparent 55%),
-    radial-gradient(900px 600px at 90% 10%, rgba(125, 165, 152, .14), transparent 55%),
+    radial-gradient(1100px 650px at 15% -10%, rgba(12, 74, 110, .15), transparent 55%),
+    radial-gradient(900px 600px at 90% 10%, rgba(56, 189, 248, .12), transparent 55%),
     var(--bg);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
@@ -126,11 +131,25 @@ body {
   font-weight: 700;
 }
 
-.field input {
+.field input,
+.field select {
   padding: 12px 12px;
   border-radius: 14px;
   border: 1px solid rgba(0, 0, 0, .12);
   font-size: 16px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.field select:hover {
+  border-color: var(--sage-green);
+}
+
+.field select:focus {
+  outline: none;
+  border-color: var(--deep-green);
+  box-shadow: 0 0 0 3px rgba(15, 61, 62, 0.1);
 }
 
 .field small {
@@ -191,15 +210,15 @@ body {
 .fileUploadSection {
   margin-top: 20px;
   padding: 16px;
-  background: linear-gradient(135deg, rgba(15, 61, 62, 0.04), rgba(125, 165, 152, 0.06));
+  background: linear-gradient(135deg, rgba(12, 74, 110, 0.04), rgba(56, 189, 248, 0.06));
   border-radius: 14px;
-  border: 2px dashed rgba(15, 61, 62, 0.2);
+  border: 2px dashed rgba(12, 74, 110, 0.2);
   transition: all 0.3s ease;
 }
 
 .fileUploadSection:hover {
-  border-color: var(--sage-green);
-  background: linear-gradient(135deg, rgba(15, 61, 62, 0.06), rgba(125, 165, 152, 0.08));
+  border-color: var(--sky-blue);
+  background: linear-gradient(135deg, rgba(12, 74, 110, 0.06), rgba(56, 189, 248, 0.08));
 }
 
 .uploadHeader {
@@ -207,19 +226,26 @@ body {
   align-items: center;
   gap: 8px;
   margin-bottom: 12px;
-  color: var(--deep-green);
+  color: var(--deep-ocean);
   font-weight: 600;
   font-size: 14px;
 }
 
 .uploadIcon {
-  color: var(--sage-green);
+  color: var(--sky-blue);
   animation: bounce 2s ease-in-out infinite;
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 .fileUploadLabel {
@@ -269,21 +295,40 @@ body {
 }
 
 .pptHero {
-  background: var(--deep-green);
-  padding: 42px 16px 58px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  padding: 48px 16px 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pptHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(45deg, transparent 48%, rgba(255,255,255,0.03) 50%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255,255,255,0.03) 50%, transparent 52%);
+  background-size: 30px 30px;
+  opacity: 0.3;
 }
 
 .pptTitle {
   margin: 0;
   text-align: center;
   color: #fff;
-  font-weight: 600;
-  font-size: clamp(28px, 3.2vw, 44px);
-  letter-spacing: .3px;
+  font-weight: 500;
+  font-size: clamp(26px, 3vw, 38px);
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .pptRibbon {
-  margin: 24px auto 0;
+  margin: 32px auto 0;
   max-width: min(var(--maxW), 92vw);
   display: flex;
   align-items: center;
@@ -291,46 +336,85 @@ body {
 }
 
 .pptRibbon .cap {
-  width: 72px;
-  height: 68px;
-  position: relative;
-}
-
-.pptRibbon .cap.left::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #fff;
-  clip-path: polygon(100% 0, 0 50%, 100% 100%, 100% 0);
-  box-shadow: var(--softShadow);
-}
-
-.pptRibbon .cap.right::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #fff;
-  clip-path: polygon(0 0, 100% 50%, 0 100%, 0 0);
-  box-shadow: var(--softShadow);
+  display: none; /* Hide the arrow caps for cleaner design */
 }
 
 .pptRibbon .body {
-  background: #fff;
-  padding: 20px 26px;
-  min-height: 68px;
-  flex: 1;
+  background: #ffffff;
+  padding: 28px 40px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 16px;
+  box-shadow: 
+    0 4px 6px rgba(74, 85, 104, 0.07),
+    0 10px 25px rgba(74, 85, 104, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.pptRibbon .body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary) 0%, var(--secondary-light) 100%);
+  border-radius: 16px 16px 0 0;
+}
+
+.pptRibbon .body::after {
+  content: '❓';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  background: var(--secondary);
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--softShadow);
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(90, 103, 216, 0.3);
 }
 
 .qtext {
-  font-weight: 800;
+  font-weight: 600;
   text-align: center;
-  font-size: clamp(16px, 1.6vw, 24px);
-  line-height: 1.4;
-  max-width: 980px;
+  font-size: clamp(17px, 1.8vw, 22px);
+  line-height: 1.6;
+  color: var(--ink);
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .pptRibbon .body {
+    padding: 24px 24px;
+    border-radius: 12px;
+  }
+
+  .qtext {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 480px) {
+  .pptRibbon {
+    margin: 24px auto 0;
+  }
+
+  .pptRibbon .body {
+    padding: 20px 18px;
+  }
+
+  .qtext {
+    font-size: 15px;
+  }
 }
 
 .pptMain {
@@ -407,32 +491,39 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 16px 18px 16px 72px;
-  border-radius: 999px;
+  padding: 18px 20px 18px 76px;
+  border-radius: 12px;
   cursor: pointer;
   user-select: none;
-  box-shadow: var(--shadow);
-  border: 2px solid transparent;
-  transition: transform .12s ease, border-color .12s ease, filter .12s ease;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(74, 85, 104, 0.08);
+  border: 2px solid var(--border);
+  transition: all 0.2s ease;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 .choice:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.01);
+  transform: translateY(-2px);
+  border-color: var(--primary-lighter);
+  box-shadow: 0 4px 12px rgba(74, 85, 104, 0.12);
 }
 
 .choice .letter {
   position: absolute;
-  left: -8px;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: #f3f4f6;
-  /* Light grey instead of white on white */
-  color: var(--deep-green);
-  /* Thematic text color */
+  left: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--primary);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid var(--border);
+  transition: all 0.2s ease;
+}
   align-items: center;
   justify-content: center;
   font-weight: 900;
@@ -462,16 +553,37 @@ body {
 }
 
 .choice.selected {
-  border-color: rgba(255, 255, 255, .9);
-  outline: 3px solid var(--sage-green);
+  border-color: var(--secondary);
+  background: linear-gradient(135deg, #EBF4FF 0%, #E0E7FF 100%);
+  box-shadow: 0 4px 12px rgba(90, 103, 216, 0.2);
+}
+
+.choice.selected .letter {
+  background: var(--secondary);
+  color: white;
+  border-color: var(--secondary);
 }
 
 .choice.correct {
-  border-color: rgba(25, 135, 84, .95);
+  border-color: var(--c);
+  background: linear-gradient(135deg, #F0FFF4 0%, #C6F6D5 100%);
+}
+
+.choice.correct .letter {
+  background: var(--c);
+  color: white;
+  border-color: var(--c);
 }
 
 .choice.wrong {
-  border-color: rgba(220, 53, 69, .95);
+  border-color: var(--d);
+  background: linear-gradient(135deg, #FFF5F5 0%, #FED7D7 100%);
+}
+
+.choice.wrong .letter {
+  background: var(--d);
+  color: white;
+  border-color: var(--d);
 }
 
 .bottom {
@@ -530,12 +642,253 @@ body {
 }
 
 .btn.primary {
-  background: var(--sage-green);
-  border-color: var(--sage-green);
+  background: var(--secondary);
+  border-color: var(--secondary);
   color: #fff;
-  font-weight: 800;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(90, 103, 216, 0.25);
+}
+
+.btn.primary:hover {
+  background: var(--secondary-light);
+  border-color: var(--secondary-light);
+  box-shadow: 0 4px 12px rgba(90, 103, 216, 0.35);
 }
 
 .btn.ghost {
   background: rgba(255, 255, 255, .9);
 }
+
+/* =========================================
+   QUIZ SELECTION BUTTONS
+   ========================================= */
+.quizButtonsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.quizBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 16px;
+  background: #ffffff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.quizBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.quizBtn:hover::before {
+  opacity: 0.08;
+}
+
+.quizBtn:hover {
+  transform: translateY(-3px);
+  border-color: var(--secondary);
+  box-shadow: 0 6px 20px rgba(90, 103, 216, 0.15);
+}
+
+.quizBtn:active {
+  transform: translateY(-1px);
+}
+
+.quizBtn.selected {
+  border-color: var(--secondary);
+  background: linear-gradient(135deg, #EBF4FF 0%, #E0E7FF 100%);
+  box-shadow: 0 4px 12px rgba(90, 103, 216, 0.2);
+}
+
+.quizBtn.selected::after {
+  content: '✓';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background: var(--secondary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(90, 103, 216, 0.3);
+}
+
+.quizIcon {
+  font-size: 32px;
+  z-index: 1;
+  position: relative;
+}
+
+.quizName {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ink);
+  z-index: 1;
+  position: relative;
+}
+
+.quizBtn small {
+  color: var(--muted);
+  font-size: 12px;
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .quizButtonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+   OR DIVIDER
+   ========================================= */
+.orDivider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.orDivider::before,
+.orDivider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.orDivider span {
+  padding: 0 16px;
+  background: var(--bg);
+}
+
+/* =========================================
+   FILE UPLOAD BUTTON
+   ========================================= */
+.fileUploadBtn {
+  display: inline-block;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: center;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.fileUploadBtn:hover {
+  border-color: var(--sky-blue);
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+}
+
+.fileUploadBtn:active {
+  transform: translateY(0);
+}
+
+/* =========================================
+   URL INPUT GROUP
+   ========================================= */
+.urlInputGroup {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.urlInput {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.urlInput:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.1);
+}
+
+.urlInput::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.btnLoadUrl {
+  padding: 12px 24px;
+  background: var(--secondary);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(90, 103, 216, 0.25);
+}
+
+.btnLoadUrl:hover {
+  background: var(--secondary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(90, 103, 216, 0.35);
+}
+
+.btnLoadUrl:active {
+  transform: translateY(0);
+}
+
+.btnLoadUrl:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 600px) {
+  .urlInputGroup {
+    flex-direction: column;
+  }
+
+  .btnLoadUrl {
+    width: 100%;
+  }
+}
+
+
