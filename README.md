@@ -1,4 +1,4 @@
-# Cloud Computing Quiz
+# Quiz
 
 A responsive, web-based quiz application designed to test your knowledge of cloud computing concepts.
 
@@ -56,3 +56,4 @@ To add or modify questions, edit the `questions.xml` file following the existing
 - HTML5
 - CSS3 (Vanilla, Responsive)
 - JavaScript (ES6+)
+
