@@ -145,10 +145,10 @@
     <explanation></explanation>
   </question>
   <question id="20" topic="VLAN" difficulty="Medium">
-    <text>What is the common characteristic of frames transmitted on an access linkin a VLAN?</text>
+    <text>What is the common characteristic of frames transmitted on an access link in a VLAN?</text>
     <option key="A" correct="false">Tagged frames</option>
-    <option key="B" correct="true">Broadcast frames</option>
-    <option key="C" correct="false">UnTagged frames</option>
+    <option key="B" correct="false">Broadcast frames</option>
+    <option key="C" correct="true">UnTagged frames</option>
     <option key="D" correct="false">Multicast trames</option>
     <explanation></explanation>
   </question>
@@ -384,14 +384,6 @@
     <option key="D" correct="false">Local memory on hosts</option>
     <explanation></explanation>
   </question>
-  <question id="50" topic="Mixed" difficulty="Medium">
-    <text>All of the following are storage units that can be encapsulated into data stores except</text>
-    <option key="A" correct="false">Local disks on hosts</option>
-    <option key="B" correct="false">Storage poolon FusionStorage</option>
-    <option key="C" correct="true">None of the above</option>
-    <option key="D" correct="false">Local memory on hosts</option>
-    <explanation></explanation>
-  </question>
   <question id="51" topic="Mixed" difficulty="Medium">
     <text>All of the following are storage units thatcan be encapsulated into data stores except</text>
     <option key="A" correct="false">LUNs on the FC SAN storage</option>
@@ -434,9 +426,9 @@
   </question>
   <question id="57" topic="Mixed" difficulty="Medium">
     <text>All of the following are storage units that can be encapsulated into data stores except Is</text>
-    <option key="A" correct="false">None of the above</option>
+    <option key="A" correct="true">None of the above</option>
     <option key="B" correct="false">File systems on the NAS</option>
-    <option key="C" correct="true">LUNs on the iSCSI</option>
+    <option key="C" correct="false">LUNs on the iSCSI</option>
     <option key="D" correct="false">Local disks on hosts</option>
     <explanation></explanation>
   </question>
