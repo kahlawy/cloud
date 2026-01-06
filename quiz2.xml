@@ -21,9 +21,9 @@
 
 <question id="3" topic="Requirements" difficulty="Medium">
 <text>In the Stepwise Project Planning model presented in the sources, which step comes immediately AFTER "Identify project scope and objectives"?</text>
-<option key="A" correct="true">Analyse project characteristics</option>
+<option key="A" correct="false">Analyse project characteristics</option>
 <option key="B" correct="false">Identify project products and activities</option>
-<option key="C" correct="false">Identify project infrastructure</option>
+<option key="C" correct="true">Identify project infrastructure</option>
 <option key="D" correct="false">Estimate effort for each activity</option>
 <explanation>Correct answer per PDF is option A.</explanation>
 </question>
