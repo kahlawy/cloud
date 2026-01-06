@@ -113,7 +113,7 @@
     <explanation></explanation>
   </question>
   <question id="16" topic="VLAN" difficulty="Medium">
-    <text>Why is itimportant for devices at both ends of a Trunk link to identify the VLAN of data frames?</text>
+    <text>Why is it important for devices at both ends of a Trunk link to identify the VLAN of data frames?</text>
     <option key="A" correct="false">Host hardware cannot identity tagged frames</option>
     <option key="B" correct="true">To ensure proper routing of data frames</option>
     <option key="C" correct="false">To reduce network congestion</option>
