@@ -393,7 +393,7 @@
     <explanation></explanation>
   </question>
   <question id="52" topic="VLAN" difficulty="Medium">
-    <text>Ina network, why do devices at both ends of a Trunk link need to identify VLANS?</text>
+    <text>In a network, why do devices at both ends of a Trunk link need to identify VLANS?</text>
     <option key="A" correct="false">To ensure all frames are tagged</option>
     <option key="B" correct="false">To maintain physical network isolation</option>
     <option key="C" correct="false">To prevent data frame transmission</option>
